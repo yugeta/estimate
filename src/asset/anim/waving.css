@@ -1,0 +1,29 @@
+.waving{
+  --size-move-distance:30px;
+  --anim-duration:2000ms;
+}
+
+.waving .waving-item{
+  display:inline-block;
+  animation-name : anim-waving;
+  animation-duration : var(--anim-duration);
+  animation-timing-function : ease;
+  animation-fill-mode:forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim-waving{
+  0% {
+    transform:translateY(0);
+  }
+  15% {
+    transform:translateY(var(--size-move-distance));
+  }
+  30% {
+    transform:translateY(0);
+  }
+  100% {
+    transform:translateY(0);
+  }
+}
+

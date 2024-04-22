@@ -1,0 +1,129 @@
+header ul.menu{
+  --time : 0.6s;
+  --move : -1.4em;
+  --size : 80px;
+
+  display:flex;
+  gap:20px;
+
+  margin-left:auto;
+  
+}
+
+/* header ul.menu > li{
+  display:flex;
+  align-items:center;
+} */
+
+header ul.menu a{
+  text-decoration:none;
+  white-space:nowrap;
+  color:black;
+  display:block;
+  text-align:center;
+  width:100%;
+}
+
+header ul.menu *{
+  font-size:1.0em;
+}
+
+header ul.menu > *{
+  position:relative;
+  cursor:pointer;
+  width:var(--size);
+}
+
+header ul.menu li::before{
+  content:"";
+  display:block;
+  width:30%;
+  height:100%;
+  background-color:#F007;
+  /* clip-path:polygon(0,0 100%,0 100%,100% 0,100%); */
+  clip-path:polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+  transform:translateX(-100%);
+  /* transform:translateX(calc(var(--size) * -1)); */
+  
+}
+header ul.menu li:hover::before{
+  /* transform:translateX(+100%); */
+  transform:translateX(var(--size));
+  transition-property:transform;
+  transition-duration:calc(var(--time) * 0.7);
+  transition-delay:0.4s;
+}
+
+header ul.menu li a{
+  display:block;
+  overflow:hidden;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:100%;
+  height:1.4em;
+}
+header ul.menu li a::before{
+  content:attr(name);
+  display:block;
+  transform:translateY(0);
+}
+
+header ul.menu li:hover a::before{
+  transform:translateY(var(--move));
+  transition-property:transform;
+  transition-duration:var(--time);
+}
+header ul.menu li a::after{
+  content:attr(name);
+  display:block;
+  transform:translateY(0);
+}
+header ul.menu li:hover a::after{
+  transform:translateY(var(--move));
+  transition-property:transform;
+  transition-duration:var(--time);
+}
+
+
+
+
+@media (max-width:900px){
+  header ul.menu{
+    position:fixed;
+    z-index:11;
+    top:0;
+    left:0;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+
+    background-color:rgba(0,0,0,0.7);
+
+    pointer-events:none;
+    opacity:0;
+  }
+  header ul.menu *{
+    color:white;
+    font-size:1.2em;
+  }
+
+  header ul.menu > li{
+    text-align:center;
+  }
+
+  #hamburger:checked ~ header ul.menu{
+    pointer-events:auto;
+    opacity:1;
+    transition-property: opacity;
+    transition-duration: 2.0s;
+  }
+
+ 
+
+}

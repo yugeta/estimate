@@ -1,0 +1,90 @@
+.humbarger-menu{
+  display:none;
+}
+.humbarger-menu label{
+  cursor:pointer;
+}
+
+.humbarger-menu{
+  width:30px;
+  height:25px;
+  text-align:center;
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  /* border:1px solid blue; */
+}
+.humbarger-menu .humbarger{
+  width:100%;
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  /* border:1px solid red; */
+}
+.humbarger-menu .humbarger > span{
+  display:block;
+  width:100%;
+  height:2px;
+  background-color:var(--col-font-1);
+  transition-property:transform opacity;
+  transition-duration:0.3s;
+}
+.humbarger-menu .humbarger > span:nth-of-type(1){
+  position:absolute;
+  top:15%;
+  transform:translateY(-50%) rotate(0deg);
+}
+.humbarger-menu .humbarger > span:nth-of-type(2){
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  opacity:1.0;
+}
+.humbarger-menu .humbarger > span:nth-of-type(3){
+  position:absolute;
+  bottom:15%;
+  transform:translateY(50%) rotate(0deg);
+}
+#humbarger:checked ~ header .humbarger-menu .humbarger > span:nth-of-type(1){
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+}
+#humbarger:checked ~ header .humbarger-menu .humbarger > span:nth-of-type(2){
+  opacity:0.0;
+}
+#humbarger:checked ~ header .humbarger-menu .humbarger > span:nth-of-type(3){
+  bottom:50%;
+  transform:translateY(50%) rotate(-45deg);
+}
+
+
+
+@media (max-width:768px){
+  .humbarger-menu{
+    display:block;
+  }
+
+  #humbarger ~ header .menu{
+    left:-100%;
+    /* transform:translate(0, 0); */
+    transform:translate(-50%, 0);
+    opacity:0.0;
+  }
+  
+  #humbarger:checked ~ header .menu{
+    left:50%;
+    transform:translate(-50%, 0);
+    opacity:1.0;
+  }
+}
+
+@media (max-width:500px){
+  .humbarger-menu{
+    width:20px;
+    height:20px;
+  }
+}

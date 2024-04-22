@@ -1,0 +1,150 @@
+@import "header.css";
+@import "header-logo.css";
+@import "header-menu.css";
+@import "header-humbarger.css";
+@import "main.css";
+@import "footer.css";
+
+:root{
+  --size-header : 80px;
+  --size-footer : 150px;
+  --col-1 : #D9B70D;
+  --col-2 : #BF8D40;
+  --col-3 : #253C59;
+  --col-4 : #2D4B73;
+  --col-5 : #99B4BG;
+  --col-font-1 : black;
+  --col-font-2 : white;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing : border-box;
+     -moz-box-sizing : border-box;
+       -o-box-sizing : border-box;
+      -ms-box-sizing : border-box;
+          box-sizing : border-box;
+  font-size:14px;
+  font-family: sans-serif;
+}
+
+body {
+  animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+
+
+html,body{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  width:100%;
+  /* height:100%; */
+}
+
+img{
+  max-width:100%;
+  object-fit:cover;
+}
+
+h2{
+  max-width:100%;
+  width:768px;
+  margin:20px auto;
+  padding:20px 20px;
+  text-align:center;
+  font-family: serif;
+  font-size:40px;
+  font-weight:normal;
+  position:relative;
+}
+h2::before,
+h2::after{
+  content:"";
+  display:block;
+  width:100%;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+h2::before{
+  top:0;
+  border-top:1px solid black;
+}
+h2::after{
+  bottom:0;
+  border-bottom:1px dashed black;
+}
+
+@media (max-width:768px){
+  h2{
+    font-size:30px;
+    width:100%;
+  }
+}
+@media (max-width:500px){
+  h2{
+    font-size:20px;
+  }
+}
+
+
+.mincho{
+  font-family: serif;
+}
+
+.spacer{
+  margin:0;
+  padding:0;
+  display:block;
+  height:50px;
+}
+
+.title{
+  margin:50px 0 50px 20px;
+
+  background-color:var(--col-1);
+  padding:20px;
+  width:200px;
+  height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:1.2em;
+  font-family: serif;
+  letter-spacing:5px;
+  position:relative;
+}
+.title::before{
+  content:"";
+  display:block;
+  position:absolute;
+  top:-20px;
+  left:0;
+  border-left:1px solid var(--col-1);
+  width:1px;
+  height:130%;
+}
+.title::after{
+  content:"";
+  display:block;
+  position:absolute;
+  top:0%;
+  left:-20px;
+  border-bottom:1px solid var(--col-1);
+  width:130%;
+  height:1px;
+}
+
+section{
+  width:768px;
+  max-width:100%;
+  margin:0 auto;
+}
+
+

@@ -1,0 +1,22 @@
+.appear{
+  --size-move-distance:30px;
+  --anim-duration:2000ms;
+}
+
+.appear-item{
+  opacity:0;
+  /* border:1px solid red; */
+  /* display:inline-block;
+  animation-name : anim-waving;
+  animation-duration : var(--anim-duration);
+  animation-timing-function : ease;
+  animation-fill-mode:forwards;
+  animation-iteration-count: infinite; */
+}
+
+.appear-item[data-appear]{
+  transition-property : opacity;
+  transition-duration : 2.0s;
+  opacity:1;
+}
+

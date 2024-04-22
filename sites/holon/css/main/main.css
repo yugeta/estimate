@@ -1,0 +1,20 @@
+@import "top.css";
+
+main{
+  display:block;
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg, #ebf4ee , #faf4e8 , #ebf4ee);
+  background-color:red;
+}
+
+main > section{
+  min-height:100vh;
+  padding-top:var(--size-header);
+}
+
+main .section-title{
+  font-size:1.5em;
+  text-align:center;
+  letter-spacing:0.2em;
+}

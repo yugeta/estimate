@@ -1,0 +1,11 @@
+/** Webフォント。 */
+@font-face {
+  font-family: 'Chillax';
+  src: url('Chillax_Complete/fonts/WEB/fonts/Chillax-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: 'Chillax', sans-serif;
+}
