@@ -2,6 +2,7 @@
 @import "common/default.css";
 @import "common/common.css";
 @import "common/var.css";
+@import "common/scroll.css";
 @import "font/font.css";
 
 @import "header/header.css";
@@ -10,5 +11,7 @@
 @import 'header/logo.css';
 
 @import 'main/main.css';
+@import 'main/top.css';
+@import 'main/concept.css';
 
 @import "footer/footer.css";

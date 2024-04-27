@@ -1,0 +1,46 @@
+#concept{
+
+}
+
+#concept .area{
+  display:flex;
+  gap:0px;
+  width:768px;
+  max-width:100%;
+  margin:50px auto 0;
+}
+
+#concept .img-1{
+  width:300px;
+}
+
+#concept .content{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  padding:0 20px;
+}
+
+#concept .size-1{
+  text-align:center;
+  font-size:2.4em;
+}
+#concept .size-2{
+  text-align:center;
+  font-size:1.2em;
+}
+#concept .size-3{
+  font-size:0.9em;
+  margin-top:30px;
+}
+
+@media (max-width:768px){
+  #concept .area{
+    flex-direction:column;
+    margin-top:0;
+  }
+  #concept .img-1{
+    width:auto;
+    height:150px;
+  }
+}
