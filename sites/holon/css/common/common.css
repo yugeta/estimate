@@ -1,3 +1,7 @@
+@import "default.css";
+@import "var.css";
+@import "scroll.css";
+
 *{
   font-size:14px;
   font-family: HuiFontP109,sans-serif;	

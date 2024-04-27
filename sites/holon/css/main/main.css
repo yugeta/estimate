@@ -1,6 +1,7 @@
 @import "top.css";
 @import 'concept.css';
 @import 'service.css';
+@import 'news.css';
 
 main{
   display:block;

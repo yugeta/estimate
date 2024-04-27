@@ -1,3 +1,7 @@
+@import "menu.css";
+@import 'hamburger.css';
+@import 'logo.css';
+
 header{
   position:fixed;
   top:0;
