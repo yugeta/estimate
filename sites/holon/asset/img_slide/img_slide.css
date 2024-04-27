@@ -1,0 +1,29 @@
+.image-wrap{
+  overflow : hidden;
+  width    : 300px;
+  height   : 300px;
+  position : relative;
+}
+
+.image-wrap > img{
+  position   : absolute;
+  width      : calc(100% + var(--move));
+  max-width  : calc(100% + var(--move));
+  height     : 100%;
+  top        : 0;
+  left       : 0;
+  object-fit : cover;
+}
+
+.image-wrap > img[data-wipe]{
+  animation : img-wipe var(--wipe) cubic-bezier(0.4, 0, 0.2, 1) 0s forwards;
+}
+
+@keyframes img-wipe{
+  0%{
+    clip-path : polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  100%{
+    clip-path : polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+} 

@@ -1,7 +1,7 @@
 header ul.menu{
   --time : 0.3s;
   --move : -1.4em;
-  --size : 80px;
+  --size : 90px;
 
   display:flex;
   align-items:center;
