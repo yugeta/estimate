@@ -33,7 +33,7 @@
 }
 
 #service .row img{
-  height:200px;
+  height:300px;
   object-fit:cover;
 }
 
@@ -49,5 +49,11 @@
   }
   #service .row:nth-of-type(2){
     flex-direction:column-reverse;
+  }
+}
+
+@media(max-width:400px){
+  #service .row img{
+    height:200px;
   }
 }
