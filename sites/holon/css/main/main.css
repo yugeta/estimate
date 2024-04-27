@@ -1,4 +1,6 @@
 @import "top.css";
+@import 'concept.css';
+@import 'service.css';
 
 main{
   display:block;
@@ -17,4 +19,10 @@ main .section-title{
   font-size:1.5em;
   text-align:center;
   letter-spacing:0.2em;
+}
+
+@media(max-width:768px){
+  main .spacer{
+    height:0;
+  }
 }

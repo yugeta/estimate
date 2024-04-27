@@ -3,10 +3,14 @@ html{
   scroll-snap-stop: always;
 }
 
-main > section{
+main > section,
+footer{
   scroll-snap-align: start;
 }
 
-footer{
-  scroll-snap-align: start;
+@media(max-width:768px){
+  main > section,
+  footer{
+    scroll-snap-align: none;
+  }
 }
