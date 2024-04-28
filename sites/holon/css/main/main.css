@@ -4,6 +4,7 @@
 @import 'news.css';
 @import 'company.css';
 @import 'contact.css';
+@import 'bg_title.css';
 
 main{
   display:block;
@@ -16,7 +17,10 @@ main{
 main > section{
   min-height:100vh;
   padding-top:var(--size-header);
+  position:relative;
+  z-index:2;
 }
+
 
 main .section-title{
   font-size:1.5em;

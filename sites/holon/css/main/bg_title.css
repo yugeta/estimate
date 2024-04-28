@@ -1,0 +1,26 @@
+section .bg-title{
+  font-size:12em!important;
+  white-space:nowrap;
+  width:100%;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  letter-spacing:inherit;
+
+  background: transparent linear-gradient(270deg, #CFDDD1 0%, #F4ECD7 50%, #CFDDD1 100%) 0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position:absolute;
+  z-index:-1;
+}
+
+#concept .bg-title{
+  top:100px;
+  margin:0;
+}
+
+#company .bg-title{
+  bottom:50px;
+  margin:0;
+}
