@@ -28,3 +28,31 @@
   white-space:nowrap;
   word-wrap:break-all;
 }
+
+
+#news .photos{
+  margin-top:100px;
+  display:flex;
+  gap:10px;
+  margin-left:-200px;
+}
+
+#news .photos img{
+  width:400px;
+  height:250px;
+  object-fit:cover;
+}
+
+#news .photos > *:nth-of-type(2n){
+  transform:translateY(50px);
+}
+
+@media (max-width:768px){
+  #news .photos img{
+    width:250px;
+    height:160px;
+  }
+  #news .photos > *:nth-of-type(2n){
+    transform:translateY(30px);
+  }
+}
