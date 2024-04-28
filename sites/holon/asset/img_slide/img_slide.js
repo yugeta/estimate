@@ -1,6 +1,8 @@
 
 
 export class ImgSlide{
+  name = "img_slide"
+
   constructor(){
     this.slide = 5000
     this.move  = 50
@@ -17,11 +19,11 @@ export class ImgSlide{
 
   // css読み込み処理
   set_css(){
-    if(document.querySelector("link.appear")){return}
+    if(document.querySelector(`link.set-flg-${this.name}`)){return}
     const link = document.createElement("link")
     link.rel = "stylesheet"
-    link.className = "appear"
-    link.href = import.meta.url.replace("img_slide.js", "img_slide.css")
+    link.className = `set-flg-${this.name}`
+    link.href = import.meta.url.replace(`${this.name}.js`, `${this.name}.css`)
     document.head.appendChild(link)
   }
 

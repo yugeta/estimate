@@ -1,18 +1,23 @@
 section .bg-title{
   font-size:12em!important;
   white-space:nowrap;
-  width:100%;
-  overflow:hidden;
-  display:flex;
+  /* width:100%; */
+  /* overflow:hidden; */
+
+  /* display:flex;
   justify-content:center;
-  letter-spacing:inherit;
+  letter-spacing:inherit; */
+  display:flex;
 
   background: transparent linear-gradient(270deg, #CFDDD1 0%, #F4ECD7 50%, #CFDDD1 100%) 0% 0% no-repeat padding-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  position:absolute;
+  /* position:absolute; */
   z-index:-1;
+
+  /* animation: bg-title-scroll 10s linear 0s infinite; */
+  /* animation: bg-title-scroll 10s linear 0s forwards; */
 }
 
 #concept .bg-title{
@@ -25,8 +30,32 @@ section .bg-title{
   margin:0;
 }
 
+/* .bg-title::before,
+.bg-title::after{
+  content:attr(data-text);
+
+  font-size:1em;
+  white-space:nowrap;
+
+  background: transparent linear-gradient(270deg, #CFDDD1 0%, #F4ECD7 50%, #CFDDD1 100%) 0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-title::after{
+  background-color:red;
+} */
+
 @media(max-width:768px){
   section .bg-title{
-    font-size:5em!important;
+    /* color:red; */
   }
 }
+
+/* @keyframes bg-title-scroll{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform: translateX(-50%);
+  }
+} */

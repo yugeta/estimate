@@ -1,0 +1,22 @@
+.telop-scroll{
+  --telop-time: 3.0s;
+
+  display:flex;
+  gap:0;
+}
+
+.telop-scroll > *{
+  animation-name: anim-telop-scroll;
+  animation-duration: var(--telop-time);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim-telop-scroll{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-100%);
+  }
+}
