@@ -55,4 +55,18 @@
   #news .photos > *:nth-of-type(2n){
     transform:translateY(30px);
   }
+
+  #news .col{
+    gap:10px;
+  }
+
+  #news .row{
+    gap:10px;
+    align-items:start;
+    padding-bottom:10px;
+  }
+
+  #news .wrap{
+    padding:0 20px;
+  }
 }

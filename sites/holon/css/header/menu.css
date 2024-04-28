@@ -113,9 +113,20 @@ header ul.menu li:hover a::after{
     pointer-events:none;
     opacity:0;
   }
-  header ul.menu *{
+  /* header ul.menu *{
     color:white;
     font-size:1.2em;
+  } */
+  header ul.menu li:hover a{
+    transition:none;
+    margin-top:0;
+  }
+  header ul.menu li a::before{
+    color:white;
+    font-size:1.2em;
+  }
+  header ul.menu li a::after{
+    display:none;
   }
 
   header ul.menu > li{
@@ -128,7 +139,5 @@ header ul.menu li:hover a::after{
     transition-property: opacity;
     transition-duration: 2.0s;
   }
-
- 
 
 }

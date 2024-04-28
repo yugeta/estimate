@@ -25,5 +25,8 @@ header a{
   :root{
     --size-header : 60px!important;
   }
+  header{
+    padding:0;
+  }
 }
 

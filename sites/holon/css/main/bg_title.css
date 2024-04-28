@@ -24,3 +24,9 @@ section .bg-title{
   bottom:50px;
   margin:0;
 }
+
+@media(max-width:768px){
+  section .bg-title{
+    font-size:5em!important;
+  }
+}

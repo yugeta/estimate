@@ -58,3 +58,12 @@
 #contact button.submit:hover{
   background-color:#a7ceb0;
 }
+
+@media (max-width:768px){
+  #contact .wrap{
+    padding:0 20px;
+  }
+  #contact .check p{
+    font-size:0.9em;
+  }
+}

@@ -1,5 +1,6 @@
 #company{
   --size-padding:30px;
+  padding-bottom:100px;
 }
 
 #company *{
@@ -25,4 +26,14 @@
   font-size:1.0em;
   white-space:nowrap;
   word-wrap:break-all;
+}
+
+@media (max-width:768px){
+  #company{
+    --size-padding:10px;
+    padding-bottom:150px;
+  }
+  #company .row{
+    gap:10px;
+  }
 }
