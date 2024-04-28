@@ -48,6 +48,7 @@ section .bg-title{
 @media(max-width:768px){
   section .bg-title{
     /* color:red; */
+    font-size:5em!important;
   }
 }
 
