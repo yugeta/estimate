@@ -96,9 +96,9 @@
       <div class="spacer"></div>
       <div class="wrap col">
         <div class="row">
-          <div class="date">2024.04.22</div>
-          <div class="title">お知らせ</div>
-          <div class="text">ホームページを開設いたしました！</div>
+          <div class="date">2024.04.30</div>
+          <div class="title">ページ更新</div>
+          <div class="text">デザインを更新しました。</div>
         </div>
         <div class="row">
           <div class="date">2024.04.22</div>
@@ -116,7 +116,8 @@
 
     <section id="company">
       <p class="section-title">Company</p>
-      <div class="col">
+      <div class="spacer"></div>
+      <div class="wrap col">
         <div class="row">
           <div class="title">会社名</div>
           <div class="content">株式会社〇〇</div>
@@ -146,66 +147,75 @@
 
     <section id="contact">
       <p class="section-title">Contact</p>
-      <form>
+      <form class="wrap">
         <div class="col">
-          <div class="row title">
-            <p>姓</p>
-            <p>名</p>
-          </div>
           <div class="row">
-            <input type="text" name="name1" />
-            <input type="text" name="name2" />
+            <div>
+              <p>姓</p>
+              <input type="text" name="name1" />
+            </div>
+            <div>
+              <p>名</p>
+              <input type="text" name="name2" />
+            </div>
           </div>
 
-          <div class="row title">
-            <p>せい</p>
-            <p>めい</p>
-          </div>
           <div class="row">
-            <input type="text" name="kana1" />
-            <input type="text" name="kana2" />
+            <div>
+              <p>せい</p>
+              <input type="text" name="kana1" />
+            </div>
+            <div>
+              <p>めい</p>
+              <input type="text" name="kana2" />
+            </div>
           </div>
 
-          <div class="row title">
-            <p>会社名・団体名</p>
-          </div>
           <div class="row">
+            <div>
+              <p>会社名・団体名</p>
             <input type="text" name="company" />
+            </div>
           </div>
 
-          <div class="row title">
-            <p>電話番号</p>
-          </div>
           <div class="row">
-            <input type="text" name="tel" />
+            <div>
+              <p>電話番号</p>
+              <input type="text" name="tel" />
+            </div>
           </div>
 
-          <div class="row title">
-            <p>メールアドレス</p>
-          </div>
           <div class="row">
-            <input type="text" name="mail" />
+            <div>
+              <p>メールアドレス</p>
+              <input type="text" name="mail" />
+            </div>
           </div>
 
-          <div class="row title">
-            <p>お問い合わせカテゴリ</p>
-          </div>
           <div class="row">
-            <input type="text" name="category" />
+            <div>
+              <p>お問い合わせカテゴリ</p>
+              <select name="category">
+                <option value=""></option>
+              </select>
+            </div>
           </div>
 
-          <div class="row title">
-            <p>お問い合わせ内容</p>
-          </div>
           <div class="row">
-            <textarea name="content"></textarea>
+            <div>
+              <p>お問い合わせ内容</p>
+              <textarea name="content"></textarea>
+            </div>
           </div>
 
-          <div class="row title">
-            <p>プライバシーポリシーに同意する</p>
-          </div>
           <div class="row">
-            <button type="submit">送信</button>
+            <div>
+              <label class="check">
+                <input type="checkbox" name="policy">
+                <p>プライバシーポリシーに同意する</p>
+              </label>
+              <button class="submit" type="submit">送信</button>
+            </div>
           </div>
         </div>
       </form>

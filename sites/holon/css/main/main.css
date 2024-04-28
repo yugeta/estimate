@@ -2,6 +2,8 @@
 @import 'concept.css';
 @import 'service.css';
 @import 'news.css';
+@import 'company.css';
+@import 'contact.css';
 
 main{
   display:block;

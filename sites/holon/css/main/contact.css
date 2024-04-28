@@ -1,0 +1,60 @@
+#contact .wrap{
+  width:500px;
+  max-width:100%;
+}
+
+#contact .col{
+  gap:20px;
+}
+
+#contact .row{
+  width:100%;
+  gap:20px;
+}
+#contact .row > *{
+  width:100%;
+}
+
+#contact .row p{
+  margin:0;
+}
+
+#contact input:not([type="radio"],[type="chackbox"]),
+#contact select,
+#contact textarea{
+  width:100%;
+  border:1px solid #76A882;
+  padding:5px;
+  border-radius:5px;
+}
+
+#contact textarea{
+  height:100px;
+}
+
+#contact .check{
+  display:flex;
+  gap:10px;
+  margin:10px auto;
+  align-items:center;
+  justify-content:center;
+}
+#contact .check input[type="checkbox"]{
+  width:30px;
+}
+
+#contact button.submit{
+  width:200px;
+  padding:15px;
+  background-color:#76A882;
+  border-radius:5px;
+  border:0;
+  color:white;
+  margin:20px auto 50px;
+  display:block;
+  cursor:pointer;
+}
+
+#contact button.submit:hover{
+  background-color:#a7ceb0;
+}
