@@ -9,12 +9,13 @@
  * # Howto
  * - <div class="telop-scroll">~</div>で単一要素を囲う
  * - 自動で、内部要素（単一要素）が画面幅に合わせて複製される。
- * - スクロールスピード : new Telop({speed: 5000}) //５秒(msで指定)
+ * - attribute -> style="--telop-time: 3.0s;"
+ * - xx : スクロールスピード : new Telop({speed: 5000}) //５秒(msで指定)
  */
 
 export class Telop{
   name = "telop"
-  speed = 5000
+  speed = null
 
   constructor(options){
     this.options = options
@@ -40,7 +41,9 @@ export class Telop{
   set_copy = function(){
     const elms = document.querySelectorAll(`.telop-scroll`)
     for(const elm of elms){
-      elm.style.setProperty("--telop-time" , `${this.speed}ms`)
+      if(this.speed){
+        elm.style.setProperty("--telop-time" , `${this.speed}ms`)
+      }
       this.copy(elm)
     }
   }

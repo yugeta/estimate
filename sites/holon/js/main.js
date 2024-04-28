@@ -5,7 +5,7 @@ class Main{
   constructor(){
     new ImgSlide()
     new Telop({
-      speed : 20000
+      // speed : 20000
     })
   }
 }

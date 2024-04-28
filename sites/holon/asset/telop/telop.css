@@ -12,6 +12,10 @@
   animation-iteration-count: infinite;
 }
 
+.telop-scroll[data-direction="reverse"] > *{
+  animation-direction:reverse;
+}
+
 @keyframes anim-telop-scroll{
   from{
     transform:translateX(0);

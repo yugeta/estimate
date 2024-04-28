@@ -31,14 +31,18 @@
 
 
 #news .photos{
-  margin-top:100px;
+  /* margin-top:100px; */
   display:flex;
   gap:10px;
-  margin-left:-200px;
+  /* margin-left:-200px; */
+  /* position:absolute; */
+  white-space:nowrap;
+  padding-right:10px;
 }
 
 #news .photos img{
   width:400px;
+  /* max-width:auto!important; */
   height:250px;
   object-fit:cover;
 }
