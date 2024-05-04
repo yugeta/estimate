@@ -1,0 +1,26 @@
+@import "header/style.css";
+@import "header/logo.css";
+@import "header/menu.css";
+@import "header/hamburger.css";
+
+:root{
+  --size-header : 120px;
+}
+
+header{
+  position:relative;
+  /* position:fixed;
+  top:0; */
+  width:100%;
+  height:var(--size-header);
+  z-index:10;
+
+  display:flex;
+  margin:0;
+  padding:50 30px 0;
+
+}
+
+header a{
+  text-decoration:none;
+}

@@ -1,0 +1,23 @@
+/**
+ * Yomigo static
+ * https://fonts.google.com/selection/embed
+ */
+/* @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+.yomogi-regular {
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+
+/**
+ * Zen Maru Gothic Static
+ * https://fonts.google.com/selection/embed
+ */
+/* @import url('https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Maru+Gothic&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+.zen-maru-gothic-regular {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
