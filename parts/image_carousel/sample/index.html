@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<!-- The following importmap tells the browser where Lume and its dependencies will come from. -->
+
+  <!--
+    JSPM Generator Import Map
+    Edit URL: https://generator.jspm.io/#U2NhYGBiDs0rySzJSU1hyCnNTXUw0DPWM9BNzCnISNQzMWQozs/JTNHNKnYw1LPQMzTTLy7JL0oFAOY0iAI4AA
+  -->
+   <script type="importmap">
+  {
+    "imports": {
+      "lume": "https://ga.jspm.io/npm:lume@0.3.0-alpha.41/dist/index.js",
+      "solid-js/store": "https://ga.jspm.io/npm:solid-js@1.8.16/store/dist/store.js",
+      "classy-solid": "https://ga.jspm.io/npm:classy-solid@0.3.7/dist/index.js"
+    },
+    "scopes": {
+      "https://ga.jspm.io/": {
+        "@lume/autolayout": "https://ga.jspm.io/npm:@lume/autolayout@0.10.1/dist/AutoLayout.js",
+        "@lume/custom-attributes/dist/index.js": "https://ga.jspm.io/npm:@lume/custom-attributes@0.2.3/dist/index.js",
+        "@lume/element": "https://ga.jspm.io/npm:@lume/element@0.11.7/dist/index.js",
+        "@lume/eventful": "https://ga.jspm.io/npm:@lume/eventful@0.3.2/dist/index.js",
+        "@lume/kiwi": "https://ga.jspm.io/npm:@lume/kiwi@0.4.3/dist/kiwi.js",
+        "@lume/three-projected-material/dist/ProjectedMaterial.js": "https://ga.jspm.io/npm:@lume/three-projected-material@0.3.1/dist/ProjectedMaterial.js",
+        "element-behaviors": "https://ga.jspm.io/npm:element-behaviors@5.0.3/dist/index.js",
+        "james-bond": "https://ga.jspm.io/npm:james-bond@0.7.3/dist/index.js",
+        "lowclass": "https://ga.jspm.io/npm:lowclass@7.0.1/dist/index.js",
+        "regexr": "https://ga.jspm.io/npm:regexr@2.0.4/dist/index.js",
+        "solid-js": "https://ga.jspm.io/npm:solid-js@1.8.16/dist/solid.js",
+        "solid-js/html": "https://ga.jspm.io/npm:solid-js@1.8.16/html/dist/html.js",
+        "solid-js/web": "https://ga.jspm.io/npm:solid-js@1.8.16/web/dist/web.js",
+        "three": "https://ga.jspm.io/npm:three@0.163.0/build/three.module.js",
+        "three/": "https://ga.jspm.io/npm:three@0.163.0/"
+      }
+    }
+  }
+  </script>
+  
+  <link rel="stylesheet" href="style.css"/>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <!-- Lume 3D elements 👉 https://lume.io ✨ -->
+<lume-scene webgl physically-correct-lights perspective="800" fog-mode="linear" fog-color="black" fog-near="600" fog-far="700">
+	<lume-camera-rig distance="800" min-distance="800" max-distance="800" min-vertical-angle="0" max-vertical-angle="0">
+		<lume-point-light intensity="1900" slot="camera-child"></lume-point-light>
+	</lume-camera-rig>
+	
+	<!-- This element is defined in the JS to show how to make custom elements. -->
+	<my-photos></my-photos>
+</lume-scene>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+#scroll{
+  --col: #028474;
+
+  position:fixed;
+  z-index:100;
+  top:calc(100vh - 200px);
+  left:2px;
+  color:var(--col);
+  font-size:0.9em;
+
+  margin:0;
+  padding:0;
+  transform:rotate(90deg);
+  transform-origin:left bottom;
+
+  display:flex;
+  gap:10px;
+  align-items:center;
+
+}
+
+/* Line */
+#scroll .line{
+  display:flex;
+  align-items:center;
+  margin:0;
+  padding:0;
+  width:80px;
+  height:1px;
+  background-color:var(--col);
+  position:relative;
+}
+
+/* Point */
+#scroll .line::before{
+  --size-point:5px;
+  content:"";
+  display:block;
+  padding:0;
+  margin:0;
+  width:var(--size-point);
+  height:var(--size-point);
+  border-radius:var(--size-point);
+  outline:calc(var(--size-point) / 1.5) solid white;
+  background-color:var(--col);
+  position:absolute;
+  left:50%;
+  animation-name:anim-point;
+  animation-duration:2s;
+  animation-delay:0;
+  animation-timing-function:linear;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+}
+@keyframes anim-point{
+  from{
+    left:0%;
+  }
+  to{
+    left:100%;
+  }
+}
+

@@ -1,0 +1,27 @@
+body{
+  background-color:black;
+}
+
+:root{
+  --size-img: 100px;
+  --size-gap: 10px;
+}
+
+.image-carousel{
+  display:flex;
+  gap:var(--size-gap);
+
+  width:500px;
+  overflow:scroll hidden;
+}
+.image-carousel > *{
+  flex:1;
+  min-width:var(--size-img);
+}
+.image-carousel img{
+  display:block;
+  width:var(--size-img);
+  height:var(--size-img);
+  object-fit:cover;
+  border-radius:calc(var(--size-img) / 10);
+}
