@@ -16,6 +16,7 @@
  */
 /* @import url('https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Maru+Gothic&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+*,
 .zen-maru-gothic-regular {
   font-family: "Zen Maru Gothic", serif;
   font-weight: 400;

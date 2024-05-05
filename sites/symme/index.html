@@ -9,9 +9,11 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <header>
+  <input type='checkbox' id='hamburger' hidden />
+  
+  <header class="wrap">
     <a class="logo" href="./">
-      <div class="main zen-maru-gothic-regular">自然楽</div>
+      <div class="main">自然楽</div>
       <div class="sub">SHIZENRAKU</div>
     </a>
     <ul class="menu">
@@ -28,20 +30,258 @@
       </label>
     </div>
   </header>
+
   <main>
-    
+    <section class="wrap" id="top">
+      <div class="left">
+        <div class="main-text">自然な治癒力を引き出し、健康な日々をサポート
+<div class="sub-text">古来からの知恵と最新の医学が交差する、癒しの空間</div></div>
+        
+      </div>
+      <div class="right">
+        <img src="img/2307502_m.jpg" />
+        <!-- <img src="img/2307502_m_white.jpg" /> -->
+        <div class="bg"></div>
+      </div>
+    </section>
+
+    <section class="wrap" id="news">
+      <p class="section-title">News</p>
+      <ul>
+        <li>
+          <p class="date">2024.04.29</p>
+          <div class="text">HPを開設いたしました！鍼灸セラピーで健康な人生への第一歩を踏み出そう！</div>
+        </li>
+        <li>
+          <p class="date">2024.05.05</p>
+          <div class="text">デザイン変更をしました！</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="concept">
+      <p class="section-title sp">Concept</p>
+      <div class="images">
+        <img class="img-1" src="img/2307505_m.jpg">
+        <img class="img-2" src="img/5085794_m.jpg">
+        <img class="img-3" src="img/26186938_s.jpg">
+      </div>
+      <div class="message">
+        <p class="section-title">Concept</p>
+        <p class="title">心身のバランスを整え、 健康な未来へ導く鍼灸サロン</p>
+        <div class="text">私たちの鍼灸サロンは、古来から伝わる鍼灸療法と現代医学の知識を融合し、患者の心身の調和と健康を追求します。私たちは、痛みや不調の根本原因を見極め、個々のニーズに合わせたホリスティックなアプローチで患者をサポートします。鍼灸は、身体の経絡やエネルギーの流れを整え、自然な治癒力を促進する古代の治療法です。現代医学の知見を取り入れ、患者の健康を守ります。
+
+私たちは患者の心と体のバランスを重視し、痛みや不調だけでなく、ストレスや生活習慣の問題にも目を向けます。患者との信頼関係を築きながら、優れたケアを提供し、患者が健康で充実した人生を送るお手伝いをします。</div>
+        
+      </div>
+    </section>
+
+    <section id="owner">
+      <div class="left">
+        <p class="section-title">Owner</p>
+        <p class="catch">心と体の調和を求める 旅へのご招待</p>
+        <div class="text">皆様、こんにちは。 私たちの鍼灸サロンへようこそ。代表の〇〇と申します。私たちのサロンは、皆さまの健康と幸福を第一に考え、心と体のバランスを整えるお手伝いをさせていただきます。古来より伝わる鍼灸の知恵や技術を活かし、現代の忙しい生活の中で心身の疲れや不調を癒し、健やかな毎日を送るお手伝いをさせていただきます。
+
+私たちのサロンでは、お一人お一人に合わせた丁寧なカウンセリングから始め、最適な施術プランをご提案いたします。また、安心して施術を受けていただけるよう、厳選された素材を使用した清潔で快適な空間を提供しています。
+
+お客様が私たちのサロンを訪れた際には、日々の疲れやストレスを忘れ、心地よい時間をお過ごしいただけるよう心掛けております。皆さまが健康で豊かな生活を送れるよう、精一杯サポートさせていただきますので、どうぞお気軽にお越しください。私たち鍼灸サロン一同、心よりお待ちしております。</div>
+      </div>
+      <div class="right">
+        <p class="section-title">Owner</p>
+        <img src="img/29336764_m.jpg"/>
+      </div>
+    </section>
+
+    <section class="wrap" id="price">
+      <p class="section-title">Price</p>
+      <div class="frame">
+        <ul>
+          <li class="head">当店施術メニュー表</li>
+          <li class="price">
+            <p class="menu">鍼灸治療(60分)</p>
+            <p class="line"></p>
+            <p class="yen">1,5000</p>
+          </li>
+          <li class="price">
+            <p class="menu">鍼灸治療(90分)</p>
+            <p class="line"></p>
+            <p class="yen">1,8000</p>
+          </li>
+          <li class="price">
+            <p class="menu">美容鍼(60分)</p>
+            <p class="line"></p>
+            <p class="yen">1,6000</p>
+          </li>
+          <li class="price">
+            <p class="menu">マッサージ(60分)</p>
+            <p class="line"></p>
+            <p class="yen">8,000</p>
+          </li>
+          <li class="causion">鍼灸サロンで提供する治療は保険適用外となります。ご了承ください。 
+保険適用外の料金に関する詳細やご質問がございましたら、お気軽にスタッフまでお尋ねください。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap" id="access">
+      <p class="section-title">Access</p>
+      <div class="frame">
+        <div class="info">
+          <div class="logo">
+            <div class="main">自然楽</div>
+            <div class="sub">SHIZENRAKU</div>
+          </div>
+        </div>
+        <ul class="address">
+          <li>
+            <p class="name">住所</p>
+            <p class="value">〒123-0000
+  東京都○○区○○1-2-33</p>
+          </li>
+          <li>
+            <p class="name">TEL</p>
+            <p class="value">000-0000-0000</p>
+          </li>
+          <li>
+            <p class="name">診療時間</p>
+            <p class="value">9:00 - 20:00</p>
+          </li>
+          <li>
+            <p class="name">定休日</p>
+            <p class="value">毎週水曜日、祝日</p>
+          </li>
+        </ul>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6478.743662591177!2d139.79360004506913!3d35.71707285117061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec2047f5333%3A0x7c84fd3881c74067!2z44CSMTExLTAwMzIg5p2x5Lqs6YO95Y-w5p2x5Yy65rWF6I2J!5e0!3m2!1sja!2sjp!4v1714823719483!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section id="reserve">
+      <div class="wrap">
+        <p class="title">ご予約はこちら</p>
+        <p class="message">ご予約はお電話にて受け付けております。 ご不明な点やお問い合わせに関しましては、お気軽にご連絡くださいませ。</p>
+        <p class="tel">000-0000-0000</p>
+        <p class="time">受付時間：9:00 - 20;00</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <p class="section-title">Contact</p>
+      <form class="wrap">
+        <div class="col">
+          <div class="row">
+            <div>
+              <p>姓</p>
+              <input type="text" name="name1" />
+            </div>
+            <div>
+              <p>名</p>
+              <input type="text" name="name2" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <p>せい</p>
+              <input type="text" name="kana1" />
+            </div>
+            <div>
+              <p>めい</p>
+              <input type="text" name="kana2" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <p>会社名・団体名</p>
+            <input type="text" name="company" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <p>電話番号</p>
+              <input type="text" name="tel" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <p>メールアドレス</p>
+              <input type="text" name="mail" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <p>お問い合わせカテゴリ</p>
+              <select name="category">
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <p>お問い合わせ内容</p>
+              <textarea name="content"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <label class="check">
+              <input type="checkbox" name="policy">
+              <p>プライバシーポリシーに同意する</p>
+            </label>
+          </div>
+
+          <div class="row">
+            <button class="submit" type="submit">送信</button>
+          </div>
+        </div>
+      </form>
+    </section>
   </main>
+
+  <div class="main-bottom"></div>
   <footer>
-    <a class="logo" href="./">
-      <div class="main zen-maru-gothic-regular">自然楽</div>
-      <div class="sub">SHIZENRAKU</div>
-    </a>
-    <ul class="menu">
-      <li><a href="#about">自然楽について</a></li>
-      <li><a href="#price">施術内容・料金</a></li>
-      <li><a href="#access">アクセス</a></li>
-      <li><a href="#contact">お問い合わせ</a></li>
-    </ul>
+    <div class="flex wrap">
+      <a class="logo" href="./">
+        <div class="main">自然楽</div>
+        <div class="sub">SHIZENRAKU</div>
+      </a>
+      <ul class="sns">
+        <li>
+          <a href="https://www.facebook.com/" name="faceboox">
+            <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 22.483 11.985 C 22.459 9.978 21.862 8.019 20.761 6.34 C 19.661 4.661 18.104 3.332 16.272 2.508 C 14.441 1.685 12.414 1.401 10.427 1.692 C 8.44 1.982 6.579 2.834 5.061 4.147 C 3.542 5.461 2.43 7.18 1.857 9.103 C 1.283 11.027 1.271 13.075 1.822 15.005 C 2.372 16.936 3.464 18.669 4.967 20 C 6.469 21.331 8.322 22.205 10.304 22.52 L 10.304 15.054 L 7.671 15.054 L 7.671 11.985 L 10.304 11.985 L 10.304 9.654 C 10.243 9.113 10.302 8.564 10.476 8.047 C 10.651 7.53 10.937 7.058 11.314 6.664 C 11.691 6.27 12.149 5.963 12.657 5.766 C 13.164 5.567 13.71 5.484 14.254 5.521 C 15.044 5.531 15.832 5.602 16.611 5.731 L 16.611 8.365 L 15.295 8.365 C 15.067 8.334 14.837 8.359 14.619 8.431 C 14.403 8.503 14.205 8.624 14.039 8.783 C 13.876 8.942 13.751 9.137 13.67 9.351 C 13.591 9.564 13.561 9.795 13.583 10.023 L 13.583 12.011 L 16.507 12.011 L 16.033 15.079 L 13.597 15.079 L 13.597 22.453 C 16.084 22.06 18.351 20.786 19.98 18.867 C 21.611 16.946 22.498 14.504 22.483 11.985 Z" style=""></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" name="Instagram">
+            <svg fill="#000000" width="800px" height="800px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+              <path d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/" name="X">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 17.742 3.039 L 20.782 3.039 L 14.14 10.631 L 21.954 20.961 L 15.836 20.961 L 11.044 14.696 L 5.56 20.961 L 2.518 20.961 L 9.623 12.841 L 2.127 3.039 L 8.4 3.039 L 12.732 8.766 L 17.742 3.039 Z M 16.675 19.141 L 18.36 19.141 L 7.485 4.763 L 5.677 4.763 L 16.675 19.141 Z" style=""></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#about">自然楽について</a></li>
+        <li><a href="#price">施術内容・料金</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="copy">CopyRight</div>
   </footer>
 </body>
 </html>

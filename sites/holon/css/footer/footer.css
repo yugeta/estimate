@@ -17,15 +17,6 @@ footer a{
   text-decoration:none;
 }
 
-footer img.kumamon{
-  position:absolute;
-  top:0;
-  right:10%;
-  transform:translateY(-100%);
-  display:block;
-  width:100px;
-}
-
 footer .flex{
   display:flex;
   align-items:start;

@@ -1,0 +1,25 @@
+#reserve{
+  background-color:#E3E1CF;
+  padding:20px;
+  margin-top:100px;
+}
+
+#reserve *{
+  text-align:center;
+}
+
+#reserve .title{
+  font-size:1.8em;
+}
+
+#reserve .message{
+  font-size:0.8em;
+}
+
+#reserve .tel{
+  font-size:1.8em;
+}
+
+#reserve .time{
+
+}

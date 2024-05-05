@@ -1,17 +1,21 @@
 header ul.menu{
   display:flex;
-  gap:10px;
-  height:70%;
+  gap:0px;
+  height:40%;
+  border-radius:40px;
+  margin-right:20px;
+  /* box-shadow:2px 2px 10px rgba(0,0,0,0.2); */
+  overflow:hidden;
 }
 header ul.menu{
   position:absolute;
   right:0px;
-  top:50%;
-  transform:translateY(-50%);
+  /* top:50%;
+  transform:translateY(-50%); */
   z-index:10;
 }
 
-header ul.menu,
+header ul,
 header li{
   list-style:none;
   margin:0;
@@ -21,11 +25,12 @@ header li{
 header li{
   display:flex;
   align-items:center;
+  padding:0;
 }
 
 header .menu a{
   text-decoration:none;
-  padding:0px;
+  padding:0 30px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -35,36 +40,43 @@ header .menu a{
   min-width:60px;
   text-align:center;
   position:relative;
-  /* text-shadow:0px 0px 5px rgba(255,255,255,1.0); */
-
+  color:var(--color-font);
+  font-size:0.8em;
   mix-blend-mode:difference;
+  letter-spacing:0;
 }
-
-header .menu a:hover::after{
-  content:"";
-  display:block;
-  width:100%;
-  height:1px;
-  background-color:var(--col-font-1);
-  position:absolute;
-  bottom:0;
-  left:0;
+header .menu a:hover{
+  background-color:#F3F3F3;
 }
 
 @media (max-width:768px){
+  #hamburger ~ header ul.menu{
+    transform:translate(-100%,0);
+  }
+
+  #hamburger:checked ~ header ul.menu{
+    transform:translate(0,0);
+  }
+
   header ul.menu{
-    width:300px;
-    top : calc(var(--size-header) + 20px);
-    /* left:50%;
-    transform:translate(-50%, 0); */
+    position:fixed;
+    top : var(--size-header);
+    left:0;
+    width:100vw;
+    height:100vh;
     flex-direction:column;
     height:auto;
     gap:0;
-    transition-property:left transform opacity;
+    background-color:#E3E1CF;
+    border-radius:0;
+    margin:0;
+    padding:50px 0;
+
+    transition-property:transform, opacity;
     transition-duration:0.7s;
   }
   header .menu a{
-    color:var(--col-font-2);
+    color:white;
     padding:20px 0;
     background-color:rgba(0,0,0,0.5);
   }

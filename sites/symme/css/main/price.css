@@ -1,0 +1,101 @@
+#price{
+  width:650px;
+  max-width:100%;
+}
+
+#price .frame{
+  background-color:#E3E1CF;
+  border-radius:40px;
+  padding:40px;
+}
+
+#price .frame ul{
+  width:100%;
+  background-color:#FFFFFFB2;
+  padding:50px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+#price .frame ul li{
+  width:100%;
+}
+#price .frame ul li *{
+  color:#454545;
+  font-size:1.1em;
+  letter-spacing: 4.8px;
+}
+#price .frame ul li.head{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+#price .frame ul li.causion{
+  display:block;
+  width:100%;
+  white-space:pre-wrap;
+  word-break:break-all;
+  font-size:0.8em;
+
+}
+#price .frame ul li.price{
+  text-align:center;
+  display:flex;
+}
+#price .frame ul li.price .menu{
+  width:40%;
+  text-align:left;
+}
+#price .frame ul li.price .line{
+  flex:1;
+  position:relative;
+}
+#price .frame ul li.price .line::before{
+  content:"";
+  display:block;
+  width:90%;
+  height:1px;
+  background-color:#d3d0b5;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+#price .frame ul li.price .yen{
+  width:30%;
+  text-align:right;
+}
+#price .frame ul li.price .yen::before{
+  content: "¥";
+}
+
+@media (max-width:768px){
+  #price{
+    padding:20px;
+  }
+  #price .frame{
+    padding:20px;
+  }
+  #price .frame ul{
+    padding:20px;
+    gap:40px;
+  }
+  #price .frame ul li.price{
+    flex-direction:column;
+  }
+  #price .frame ul li.price p{
+    margin:0;
+  }
+  #price .frame ul li.price .menu{
+    width:100%;
+    text-align:center;
+  }
+  #price .frame ul li.price .yen{
+    width:100%;
+    text-align:center;
+  }
+  #price .frame ul li.price .line{
+    display:none;
+  }
+}
+

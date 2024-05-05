@@ -1,5 +1,7 @@
 :root{
-  --size-wrap   : 768px;
+  --size-header : 120px;
+  --size-wrap   : 1000px;
+  --color-font  : #454545;
 }
 
 

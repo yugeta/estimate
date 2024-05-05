@@ -4,6 +4,7 @@ header .hamburger-menu{
   width:50px;
   text-align:center;
   position:relative;
+  z-index:20;
 }
 header .hamburger-menu .hamburger{
   width:20px;
@@ -52,12 +53,12 @@ input#hamburger[type='checkbox']:checked ~ header .hamburger-menu .hamburger > s
 }
 
 
-@media (max-width:900px){
+@media (max-width:768px){
   header .hamburger-menu{
     display:block;
     z-index:12;
   }
-  #hamburger:checked ~ header .hamburger-menu .hamburger > span{
+  /* #hamburger:checked ~ header .hamburger-menu .hamburger > span{
     background-color:white;
-  }
+  } */
 }

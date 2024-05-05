@@ -1,23 +1,23 @@
-header .logo{
+.logo{
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   padding:0 20px;
 }
-header .logo a{
+.logo a{
   text-decoration:none;
   
 }
 
-header .logo .main{
+.logo .main{
   font-size:2.4em;
-  color:#454545;
+  color:var(--color-font);
 }
-header .logo .sub{
+.logo .sub{
   font-size:0.8em;
   letter-spacing:0.2em;
-  color:#454545;
+  color:var(--color-font);
 }
 
 @media (max-width:500px){
