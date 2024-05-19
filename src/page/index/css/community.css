@@ -1,0 +1,14 @@
+#community .front-title{
+  bottom:60%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+#community .back-title{
+  text-align:center;
+  font-size:3.0em;
+  writing-mode: vertical-rl;
+}
+
+#community{
+  background-color:#F8F8FA;
+}

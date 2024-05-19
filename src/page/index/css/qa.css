@@ -1,0 +1,8 @@
+#qa .front-title{
+  bottom:60%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+#qa .back-title{
+  text-align:center;
+}

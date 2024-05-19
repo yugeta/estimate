@@ -1,8 +1,8 @@
 header .logo{
-  position:absolute;
+  /* position:absolute;
   top:50%;
   left:10px;
-  transform:translateY(-50%);
+  transform:translateY(-50%); */
   display:flex;
   align-items:center;
   gap: 5px;
@@ -11,8 +11,14 @@ header .logo{
   z-index:10;
 }
 
+header .logo a{
+  text-decoration:none;
+}
+
 header .logo h1,
 header .logo h1 *{
+  color:#07C8C0;
+  font-weight:bold;
   /* mix-blend-mode:difference; */
 }
 header .logo h1{
@@ -23,7 +29,7 @@ header .logo h1{
 }
 header .logo h1,
 header .logo h1 *{
-  font-size:26px;
+  font-size:1.0em;
 }
 
 header .logo .icon{

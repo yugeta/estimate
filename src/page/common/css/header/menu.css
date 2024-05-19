@@ -4,10 +4,10 @@ header ul.menu{
   height:70%;
 }
 header ul.menu{
-  position:absolute;
+  /* position:absolute;
   right:0px;
   top:50%;
-  transform:translateY(-50%);
+  transform:translateY(-50%); */
   z-index:10;
 }
 

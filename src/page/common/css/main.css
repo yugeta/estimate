@@ -1,9 +1,9 @@
-main{
-  width:100%;
-  min-height:calc(100vh - var(--size-header) - var(--size-footer) - 2px);
-  /* margin-top:var(--size-header); */
-  position:relative;
-  border-top:1px solid transparent;
-  border-bottom:1px solid transparent;
-  z-index:1;
-}
+@import "common/style.css";
+@import "header/style.css";
+@import "header/logo.css";
+@import "header/menu.css";
+@import "header/humbarger.css";
+@import "main/style.css";
+@import "main/title.css";
+@import "footer/style.css";
+

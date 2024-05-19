@@ -28,13 +28,13 @@ class Main{
     if(this.loading){
       this.loading.style.setProperty('display','none','')
     }
-    new SvgImport()
-    new Waving({
-      elm : document.querySelectorAll("header .waving a"),
-      delay : 100,
-      distance  : "-5px",
-      duration : "2.0s",
-    })
+    // new SvgImport()
+    // new Waving({
+    //   elm : document.querySelectorAll("header .waving a"),
+    //   delay : 100,
+    //   distance  : "-5px",
+    //   duration : "2.0s",
+    // })
   }
 }
 
