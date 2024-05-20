@@ -27,6 +27,7 @@
   display:block;
   margin:0 auto;
 }
+
 #features .card p{
   color:#07C8C0;
   font-size:1.0em;
@@ -39,5 +40,14 @@
   font-size:0.8em;
 }
 
-
+@media (max-width:768px){
+  #features .flex{
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+  }
+  #features .flex .card{
+    width:280px;
+  }
+}
 
