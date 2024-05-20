@@ -11,41 +11,6 @@
   padding:40px 0;
 }
 
-
-#designs .more{
-  display:block;
-  margin:40px auto;
-  padding:15px;
-  background-color:#07C8C0;
-  font-size:1.2em;
-  color:white;
-  width:250px;
-  text-align:center;
-  cursor:pointer;
-  position:relative;
-}
-@media (hover:hover){
-  #designs .more:hover{
-    opacity:0.5;
-  }
-  #designs .more::after{
-    content:"";
-    display:block;
-    width:0.7em;
-    height:0.7em;
-    border-color:white;
-    border-style:solid;
-    border-width:0 1px 1px 0;
-    position:absolute;
-    right:15px;
-    top:50%;
-    transform:translate(0,-50%) rotate(-45deg);
-  }
-}
-#designs .more:active{
-  opacity:0.5;
-}
-
 #designs .carousel{
   width:100%;
   height:400px;

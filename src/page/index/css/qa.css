@@ -6,3 +6,100 @@
 #qa .back-title{
   text-align:center;
 }
+
+#qa ul,
+#wa li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#qa .lists{
+  display:flex;
+  gap:20px;
+  flex-direction:column;
+  width:80%;
+  margin:50px auto;
+}
+
+#qa .lists .card{
+  border:1px solid #A1A9B7;
+  border-radius:10px;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  position:relative;
+}
+
+#qa .lists .card .q::before{
+  content : "Q";
+  margin-right:20px;
+  color:#09C8C0;
+  font-size:1.2em;
+  font-weight:bold;
+  
+}
+
+#qa .lists .card .q{
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+#qa .lists .card .a{
+  display:none;
+  padding:10px 30px;
+}
+
+#qa .lists .card .btn{
+  position:absolute;
+  right:20px;
+  top:30px;
+  width:30px;
+  height:30px;
+  border:0;
+  border-radius:50%;
+  background-color:#09C8C0;
+  position:absolute;
+  cursor:pointer;
+}
+
+#qa .lists .card .btn::before{
+  content:"";
+  display:block;
+  width:30%;
+  height:30%;
+  border-style:solid;
+  border-color:white;
+  border-width:0 2px 2px 0;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+}
+#qa .lists .card:has(input[type="checkbox"]:checked) .btn::before{
+  transform:translate(-50%,-50%) rotate(-135deg);
+}
+#qa .lists .card:has(input[type="checkbox"]:checked) .a{
+  display:block;
+}
+
+
+@media (max-width:768px){
+  #qa .lists{
+    gap:10px;
+    width:90%;
+  }
+  #qa .lists .card{
+    padding:20px;
+  }
+  #qa .lists .card .btn{
+    top:25px;
+    right:10px;
+    width:24px;
+    height:24px;
+  }
+  #qa .lists .card .btn::before{
+
+  }
+}

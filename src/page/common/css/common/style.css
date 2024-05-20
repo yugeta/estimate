@@ -20,6 +20,10 @@
   font-family: sans-serif;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body {
   animation: fadeIn 2s ease 0s 1 normal;
 }
