@@ -21,9 +21,9 @@
 }
 
 #features .card img{
-  width:80px;
+  width:100px;
   height:80px;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
   margin:0 auto;
 }
