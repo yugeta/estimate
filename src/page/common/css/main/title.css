@@ -21,4 +21,14 @@
   transform:translate(0 , -50%);
   letter-spacing:0.1em;
   margin:0;
+  white-space:nowrap;
+}
+
+@media (max-width:768px){
+  .titles .back-title{
+    font-size:4.5em;
+  }
+  .titles .front-title{
+    font-size:1.2em;
+  }
 }
