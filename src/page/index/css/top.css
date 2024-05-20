@@ -62,3 +62,34 @@
   right:0;
   padding:15px 15px 15px 20px;
 }
+
+@media (max-width:768px){
+  #top .wrap{
+    flex-direction:column;
+    width:100%;
+  }
+
+  #top::before{
+    width:100%;
+  }
+
+  #top .text{
+    width:100%;
+    text-align:center;
+    gap:5px;
+  }
+  #top .top-title{
+    font-size:1.0em;
+  }
+  #top .top-message{
+    font-size:1.4em;
+    line-height:1.6em;
+  }
+  #top .image{
+    width:70%;
+    margin:0 auto;
+  }
+  #top .wrap{
+    gap:20px;
+  }
+}
