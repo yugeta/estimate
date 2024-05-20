@@ -6,3 +6,122 @@
 #flow .back-title{
   text-align:center;
 }
+
+#flow ul,
+#flow li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#flow ul.lists{
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+  width:600px;
+  max-width:90%;
+  margin:0 auto;
+  counter-reset:num;
+}
+
+#flow ul.lists li{
+  display:flex;
+  gap:50px;
+  align-items:center;
+}
+
+#flow ul.lists li .num{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color:#6EE9C2;
+  border:12px solid #CEF7EA;
+  display:flex;
+  gap:5px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+#flow ul.lists li .num::before{
+  content:"";
+  display:block;
+  width:4px;
+  height:200%;
+  background-color:#6EE9C2;
+  position:absolute;
+  top:100%;
+  left:50%;
+  transform:translate(-50%,0);
+  z-index:-1;
+}
+#flow ul.lists li:last-child .num::before{
+  display:none
+}
+
+#flow ul.lists li .num p{
+  font-size:1.0em;
+  line-height:0.8em;
+  font-weight:bold;
+  color:white;
+  padding:0;
+  margin:0;
+}
+
+#flow ul.lists li .num::after{
+  counter-increment:num;
+  content: "0"counter(num);
+  display:block;
+  font-size:2.0em;
+  font-weight:bold;
+  line-height:1.2em;
+  color:white;
+  padding:0;
+  margin:0;
+  height:30px;
+}
+
+#flow ul.lists li .body{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+#flow ul.lists li .body .flow-title{
+  font-weight:bold;
+  font-size:1.1em;
+  margin:0;
+  padding:0;
+}
+
+#flow ul.lists li .body .text{
+  font-size:0.9em;
+}
+
+@media (max-width:500px){
+  #flow ul.lists li{
+    gap:20px;
+  }
+  #flow ul.lists li .num{
+    width:80px;
+    height:80px;
+    border-width:10px;
+  }
+  #flow ul.lists li .num p{
+    font-size:0.8em;
+    line-height:0.6em;
+    margin-top:5px;
+  }
+  #flow ul.lists li .num::after{
+    font-size:1.6em;
+    line-height:1.0em;
+  }
+  #flow ul.lists li .num::before{
+    height:240%;
+  }
+  #flow ul.lists li .body .flow-title{
+    font-size:1.0em;
+  }
+}
