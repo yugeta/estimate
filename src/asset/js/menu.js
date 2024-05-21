@@ -51,7 +51,7 @@ export class Menu{
     }
     Menu.lists = lists
   }
-  is_current(queries){console.log(this.page_name,this.file_name)
+  is_current(queries){
     if((queries.p || '') === this.page_name
     && (queries.f || '') === this.file_name){
       return true
