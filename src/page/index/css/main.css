@@ -5,4 +5,8 @@
 @import "community.css";
 @import "flow.css";
 @import "qa.css";
-@import "contact.css";
+@import "../../contact/css/contact.css";
+
+main section:last-child{
+  margin-bottom:0;
+}

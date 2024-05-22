@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="page/{{page_name}}/css/main.css"/>
 <script type="module" src="page/{{page_name}}/js/main.js"></script>
+<script type="module" src="page/contact/js/main.js"></script>
 
 <section id="top">
   <div class="wrap">
@@ -196,4 +197,46 @@
     <p class="back-title">Contact</p>
     <p class="front-title">お問い合わせ</p>
   </div>
+
+  <form name="contact">
+    <input class="ip" type="hidden" name="ip" />
+    <input class="ua" type="hidden" name="ua" />
+    <input class="memo" type="hidden" name="memo" />
+
+    <div>
+      <p>お名前</p>
+      <input type="text" name="name" required/>
+    </div>
+
+    <div>
+      <p>メールアドレス</p>
+      <input type="email" name="mail" required/>
+    </div>
+
+    <div>
+      <p>お問い合わせカテゴリ</p>
+      <select name="category">
+        <option value="Web制作について">Web制作</option>
+        <option value="お見積りについて">お見積</option>
+        <option value="コミュニティについて">コミュニティ</option>
+        <option value="このサイトについて">このサイトについて</option>
+        <option value="その他">その他</option>
+      </select>
+    </div>
+
+    <div>
+      <p>お問い合わせ内容</p>
+      <textarea name="content" required></textarea>
+    </div>
+
+    <label>
+      <input type="checkbox" required>
+      <div class="checkbox"></div>
+      <span>プライバシーポリシーに同意する</span>
+    </label>
+
+    <div>
+      <button class="more" type="button" name="post">送信</button>
+    </div>
+  </form>
 </section>

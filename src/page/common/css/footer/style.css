@@ -2,17 +2,22 @@ footer{
   
   text-align:center;
   padding:10px;
-  font-size:0.9em;
+  font-size:0.8em;
   height:var(--size-footer);
   margin:0;
   padding:0;
-  padding-top:50px;
   display:flex;
   align-items:center;
   justify-content:center;
   /* flex-direction:column; */
   gap:20px;
 }
+
+footer,
+footer *{
+  font-size:1.0em;
+}
+
 
 footer .footer-flex{
   display:flex;
@@ -32,7 +37,7 @@ footer .address{
   }
 }
 
-@media (max-width:500px){
+/* @media (max-width:500px){
   :root{
     --size-footer : 250px!important;
   }
@@ -42,4 +47,4 @@ footer .address{
   footer .footer-flex{
     text-align:left;
   }
-}
+} */
