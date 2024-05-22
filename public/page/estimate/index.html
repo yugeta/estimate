@@ -1,0 +1,281 @@
+
+<link rel="stylesheet" href="page/{{page_name}}/css/style.css"/>
+<script type="module" src="page/{{page_name}}/js/main.js"></script>
+
+<h1></h1>
+<div class="titles">
+  <p class="back-title">Estimate</p>
+  <p class="front-title">ホームページ制作お見積もり</p>
+</div>
+
+<form
+  name="estimate" 
+  method='post'
+  target="complete"
+  action="https://docs.google.com/forms/d/e/1FAIpQLSd8y8XV2l5yuiYFts1oioi-M3W95pW6qPNQGA4RYzYHnb-0rQ/formResponse">
+
+  <div class="debug" style="display:none;">
+    <p>システム設定※開発時用項目</p>
+    <select name="mode">
+      <option value=""></option>
+      <option value="debug">デバッグモード※値がサーバーに送信されません。</option>
+    </select>
+  </div>
+
+  <ul class="slide">
+    <li id="page_1">
+      <p class="title">1. 基本情報</p>
+
+      <div class="subscribe">最初に簡単な情報を入力ください。</div>
+
+      <div class="flex-column">
+        <div class="input-group">
+          <p>お名前</p>
+          <input type="text" name="entry.1346579070" value="" required />
+        </div>
+      
+        <div class="input-group">
+          <p>メールアドレス</p>
+          <input type="mail" name="entry.730296773" value="" required/>
+        </div>
+        
+        <div class="page-link">
+          <!-- <a class="back" href="#"></a> -->
+          <a class="next" href="#page_2"></a>
+        </div>
+      </div>
+    </li>
+
+    <li id="page_2">
+      <p class="title">2. どのようなお見積を希望しますか？</p>
+
+      <div class="subscribe">該当するものを選択してください。</div>
+
+      <div class="flex-column">
+        <!-- <div class="input-group">
+          <p>ご希望</p>
+          <select name="entry.1249913976">
+            <option value="">--</option>
+            <option value="とにかく安く作りたい">とにかく安く作りたい</option>
+            <option value="デザインにこだわりたい">デザインにこだわりたい</option>
+            <option value="特殊なホームページを作りたい">特殊なホームページを作りたい</option>
+            <option value="よくわからないので相談したい">よくわからないので相談したい</option>
+          </select>
+        </div> -->
+        <div class="flex-radio-1">
+          <label><input type="radio" name="entry.1249913976" value="とにかく安く作りたい" required>とにかく安く作りたい</label>
+          <label><input type="radio" name="entry.1249913976" value="デザインにこだわりたい">デザインにこだわりたい</label>
+          <label><input type="radio" name="entry.1249913976" value="特殊なホームページを作りたい">特殊なホームページを作りたい</label>
+          <label><input type="radio" name="entry.1249913976" value="よくわからないので相談したい">よくわからないので相談したい</label>
+        </div>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_1"></a>
+        <a class="next" href="#page_3"></a>
+      </div>
+    </li>
+    <li  id="page_3">
+      <p class="title">3. ホームページの種類</p>
+
+      <div class="subscribe">ご希望の種類を選んでください。</div>
+
+      <div class="flex-radio-2">
+        <label><input type="radio" name="entry.1736547568" data-num="1" data-price="5" value="企業サイト" required>企業サイト</label>
+        <label><input type="radio" name="entry.1736547568" data-num="2" data-price="10" value="採用サイト">採用サイト</label>
+        <label><input type="radio" name="entry.1736547568" data-num="3" data-price="5" value="商品サービスサイト">商品サービスサイト</label>
+        <label><input type="radio" name="entry.1736547568" data-num="4" data-price="5" value="ランディングページ">ランディングページ</label>
+        <label><input type="radio" name="entry.1736547568" data-num="5" data-price="30" value="ECサイト">ECサイト</label>
+        <label><input type="radio" name="entry.1736547568" data-num="6" data-price="20" value="オウンドメディア">オウンドメディア</label>
+        <label><input type="radio" name="entry.1736547568" data-num="7" data-price="10" value="ポータルサイト">ポータルサイト</label>
+        <label><input type="radio" name="entry.1736547568" data-num="8" data-price="10" value="その他">その他</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_2"></a>
+        <a class="next" href="#page_4"></a>
+      </div>
+    </li>
+    <li id="page_4">
+      <p class="title">4. サイトのボリューム</p>
+
+      <div class="subscribe">どのくらいのページ数ですか？</div>
+
+      <div class="flex-radio-1">
+        <label><input type="radio" name="entry.1402687745" data-num="1" data-price="3" value="1ページのみ" required>1ページのみ</label>
+        <label><input type="radio" name="entry.1402687745" data-num="2" data-price="15" value="5ページぐらい">5ページぐらい</label>
+        <label><input type="radio" name="entry.1402687745" data-num="3" data-price="30" value="10ページ以上">10ページ以上</label>
+        <label><input type="radio" name="entry.1402687745" data-num="4" data-price="10" value="わからない">わからない</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_3"></a>
+        <a class="next" href="#page_5"></a>
+      </div>
+    </li>
+    <li id="page_5">
+      <p class="title">5. デザインについて</p>
+
+      <div class="subscribe">デザインのこだわりについて選択してください。</div>
+
+      <div class="flex-radio-1">
+        <label><input type="radio" name="entry.1869565113" data-num="1" data-price="3" value="テンプレでOK" required>テンプレでOK</label>
+        <label><input type="radio" name="entry.1869565113" data-num="2" data-price="5" value="一般的なデザインで会社独自のデザインを構築して欲しい">一般的なデザインで会社独自のデザインを構築して欲しい</label>
+        <label><input type="radio" name="entry.1869565113" data-num="3" data-price="10" value="どこにも無いデザインでお願いしたい">どこにも無いデザインでお願いしたい</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_4"></a>
+        <a class="next" href="#page_6"></a>
+      </div>
+    </li>
+    <li id="page_6">
+      <p class="title">6. 写真や動画素材</p>
+
+      <div class="subscribe">素材は制作費に大きく影響してきます。</div>
+
+      <div class="flex-radio-1">
+        <label><input type="radio" name="entry.56227603" data-num="1" data-price="3" value="全部用意できる" required>全部用意できる（ロゴやアイコン等も含む）</label>
+        <label><input type="radio" name="entry.56227603" data-num="2" data-price="6" value="無料の画像で揃えて欲しい">無料の画像で揃えて欲しい</label>
+        <label><input type="radio" name="entry.56227603" data-num="3" data-price="10" value="作成または購入をお願いしたい">作成または購入をお願いしたい</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_5"></a>
+        <a class="next" href="#page_7"></a>
+      </div>
+    </li>
+    <li id="page_7">
+      <p class="title">7. 文章素材</p>
+
+      <div class="subscribe">見に来た人を惹き付ける文章は必要ですか？</div>
+
+      <div class="flex-radio-1">
+        <label><input type="radio" name="entry.1665971148" data-num="1" data-price="3" value="全部用意できる" required>全部用意できる</label>
+        <label><input type="radio" name="entry.1665971148" data-num="2" data-price="6" value="パンフレットがあるのでそれを元にライティングしてもらいたい">パンフレットがあるのでそれを元にライティングしてもらいたい</label>
+        <label><input type="radio" name="entry.1665971148" data-num="3" data-price="10" value="インタビューをしてライティングしてもらいたい">インタビューをしてライティングしてもらいたい</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_6"></a>
+        <a class="next" href="#page_8"></a>
+      </div>
+    </li>
+    <li id="page_8">
+      <p class="title">8. オプション機能</p>
+
+      <div class="subscribe">必要な機能を選択してください。</div>
+
+      <input type="hidden" name="entry.330041923">
+
+      <div class="flex-radio-2">
+        <label><input type="checkbox" name="entry.330041923[]" data-num="1" data-price="3" value="お問い合わせ">お問い合わせ</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="2" data-price="5" value="検索機能 (サイト内検索)">検索機能 (サイト内検索)</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="3" data-price="5" value="ログイン機能 (ユーザー登録や管理者認証)">ログイン機能 (ユーザー登録や管理者認証)</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="4" data-price="10" value="決済機能 (カート機能など)">決済機能 (カート機能など)</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="5" data-price="5" value="スマホ対応 (レスポンシブデザイン)">スマホ対応 (レスポンシブデザイン)</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="6" data-price="5" value="多言語対応 (日本語・英語切り替え機能など)">多言語対応 (日本語・英語切り替え機能など)</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="7" data-price="10" value="ページ更新機能 (Wordpressや専用管理画面など)">ページ更新機能 (Wordpressや専用管理画面など)</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="8" data-price="10" value="SNS連携 (OGPタグとリンクボタンの設置)">SNS連携 (OGPタグとリンクボタンの設置)</label>
+        <label><input type="checkbox" name="entry.330041923[]" data-num="9" data-price="10" value="設計書または運用管理ドキュメントの納品">設計書または運用管理ドキュメントの納品</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_7"></a>
+        <a class="next" href="#page_9"></a>
+      </div>
+    </li>
+    <li id="page_9">
+      <p class="title">9. 運用について</p>
+
+      <div class="subscribe">ホームページをご自身で運用できるか、業者に任せるか選択してください。</div>
+
+      <div class="flex-radio-1">
+        <label><input type="radio" name="entry.1267091108" data-num="1" data-running="0" value="自分で運用をする" required>自分で運用をする</label>
+        <label><input type="radio" name="entry.1267091108" data-num="2" data-running="3" value="運用は全てお願いしたい">運用は全てお願いしたい</label>
+        <label><input type="radio" name="entry.1267091108" data-num="3" data-running="10" value="KPI目標といっしょにお願いしたい">KPI目標といっしょにお願いしたい</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_8"></a>
+        <a class="next" href="#page_10"></a>
+      </div>
+    </li>
+    <li id="page_10">
+      <p class="title">10. サーバー・ドメイン</p>
+
+      <div class="subscribe">すでにお持ちの場合は、それを使うこともできます。</div>
+
+      <div class="flex-radio-1">
+        <label><input type="radio" name="entry.612331426" data-num="1" data-running="0" value="自分で運用をする" required>自分で管理をする</label>
+        <label><input type="radio" name="entry.612331426" data-num="2" data-running="2" value="全てお願いしたい">全てお願いしたい</label>
+        <label><input type="radio" name="entry.612331426" data-num="3" data-running="0" value="他社にお願いする予定">他社にお願いする予定</label>
+      </div>
+
+      <div class="page-link">
+        <a class="back" href="#page_9"></a>
+        <a class="next" href="#page_11"></a>
+      </div>
+    </li>
+    <li id="page_11">
+      <p class="title">11. その他の情報などお書きください。</p>
+
+      <div class="subscribe">これまでの質問に無い伝達事項などあれば、自由に記入ください。</div>
+
+      <textarea name="entry.377249137"></textarea>
+
+      <div class="page-link">
+        <a class="back" href="#page_10"></a>
+        <a class="next" href="#page_send"></a>
+      </div>
+    </li>
+    
+    <li id="page_send">
+      <p class="title">12. 確認</p>
+
+      
+
+      <div class="page-link">
+        <a class="back" href="#page_11"></a>
+        <button class="send more" type="button">送信</button>
+        <!-- <a class="next" href="#page_thanks"></a> -->
+      </div>
+    </li>
+
+    <li id="page_thanks">
+      送信しました。
+    </li>
+
+    <li hidden>
+      <p>ip</p>
+      <input class="ip" type="hidden" name="entry.1408506650" />
+
+      <p>UserAgent</p>
+      <input class="ua" type="hidden" name="entry.1667306761" />
+
+      <p>Price & Running</p>
+      <input class="price" type="hidden" name="entry.282535527" />
+      <input class="running" type="hidden" name="entry.249821144" />
+    </li>
+  </ul>
+
+  <ul class="pagenation">
+    <li class="page_1">1</li>
+    <li class="page_2">2</li>
+  </ul>
+</form>
+
+<section class="result" data-view="">
+  <p>お見積り結果</p>
+  <div class="sentence">※本お見積りは簡易見積もりのため正式なお見積では無いことをご了承ください。</div>
+  <ul>
+    <li>
+      <p>初期</p>
+      <input type="text" name="price" readonly /> 円
+    </li>
+    <li>
+      <p>運用（月額）</p>
+      <input type="text" name="running" readonly /> 円 / 月
+    </li>
+  </ul>
+</section>
