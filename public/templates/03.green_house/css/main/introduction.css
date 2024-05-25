@@ -66,15 +66,15 @@
 }
 #introduction ul li:nth-of-type(2) .img{
   border:var(--size-border) solid #FADF85;
-  animation-delay:0.5s;
+  animation-delay:0.3s;
 }
 #introduction ul li:nth-of-type(3) .img{
   border:var(--size-border) solid #AED0DD;
-  animation-delay:1.0s;
+  animation-delay:0.6s;
 }
 #introduction ul li:nth-of-type(4) .img{
   border:var(--size-border) solid #BEC474;
-  animation-delay:1.5s;
+  animation-delay:0.9s;
 }
 
 #introduction ul li:nth-of-type(2n-1){
