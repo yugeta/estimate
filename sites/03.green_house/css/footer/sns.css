@@ -1,0 +1,15 @@
+footer .sns{
+  display:flex;
+  gap:20px;
+  align-items:start;
+}
+
+footer .sns svg{
+  fill:#DC937B;
+  width:30px;
+  height:30px;
+}
+footer .sns svg:hover{
+  opacity:0.5;
+}
+

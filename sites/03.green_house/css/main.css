@@ -1,0 +1,57 @@
+@import "main/top.css";
+@import "main/info.css";
+@import "main/introduction.css";
+@import "main/diary.css";
+
+main{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+
+main section > .wrap{
+  width:800px;
+  max-width:100%;
+  margin:100px auto;
+  padding:0 20px;
+}
+
+main .section-title{
+  font-weight:bold;
+  font-size:1.4em;
+  letter-spacing:0.4em;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  /* margin-left:-30px; */
+}
+
+main .section-title::before{
+  content:"";
+  display:block;
+  width:20px;
+  height:20px;
+  background-color:#E8AE9B;
+  border-radius:50%;
+  margin-right:10px;
+}
+
+main .section-title-area{
+  display:flex;
+  align-items:center;
+}
+
+@media (max-width:768px){
+  main section{
+    /* padding-left:20px;
+    padding-right:20px; */
+  }
+  main .section-title{
+    /* margin-left:0px; */
+  }
+  main .section-title-area{
+    flex-direction:column;
+    gap:10px;
+    align-items:start;
+  }
+}

@@ -1,0 +1,36 @@
+@import "header/logo.css";
+@import "header/menu.css";
+@import "header/hamburger.css";
+
+:root{
+  --size-header  : 60px;
+  --color-header : #F2EADE;
+}
+
+header{
+  background-color:var(--color-header);
+  position:relative;
+  width:100%;
+  height:var(--size-header);
+  z-index:100;
+  display:flex;
+  margin:0;
+  padding:50 30px 0;
+  align-items:center;
+}
+header::before{
+  content:"";
+  pointer-events:none;
+  display:block;
+  width:150px;
+  height:120px;
+  position:absolute;
+  top:100%;
+  background-color:var(--color-header);
+  /* clip-path: border-box circle(50% at 50% 0%) */
+  clip-path: border-box ellipse(50% 50% at 50% -10%)
+}
+
+header a{
+  text-decoration:none;
+}

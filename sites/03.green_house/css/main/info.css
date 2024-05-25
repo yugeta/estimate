@@ -1,0 +1,68 @@
+#info{
+  background-color:#F9F2E9;
+}
+
+#info ul{
+  display:flex;
+  flex-direction:column;
+}
+
+#info ul li{
+  border-bottom:1px dashed #B1A59E;
+  padding:20px;
+  display:flex;
+  gap:40px;
+  align-items:center;
+}
+
+#info ul li .tag{
+  padding:3px 10px;
+  border-radius:5px;
+  width:100px;
+  text-align:center;
+  font-size:0.9em;
+  font-weight:bold;
+}
+
+#info ul li .tag[type="newsletter"]{
+  background-color:#E8AE9B;
+}
+
+#info ul li .tag[type="info"]{
+  background-color:#FADF85;
+}
+
+#info ul li .date{
+  letter-spacing:0.1em;
+}
+#info ul li .text{
+  margin-left:50px;
+}
+
+#info .section-title-area a.arrow{
+  margin-left:50px;
+  padding-right:4em;
+}
+
+@media (max-width:768px){
+  #info .section-title-area a.arrow{
+    display:block;
+    margin-left:auto;
+    padding-right:2em;
+  }
+
+  #info ul li{
+    flex-direction:column;
+    align-items:start;
+    gap:20px;
+  }
+  #info ul li .date{
+    /* width:100%;
+    text-align:center; */
+    margin-left:20px;
+  }
+  #info ul li .text{
+    margin-left:20px;
+  }
+  
+}

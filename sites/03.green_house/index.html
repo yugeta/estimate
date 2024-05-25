@@ -9,13 +9,13 @@
   <script type="module" src="js/main.js"></script>
 </head>
 <body>
+  <input type='checkbox' id='hamburger' hidden />
+
   <header>
-    <a class="logo" href="./">
-      <p>LOGO</p>
-    </a>
+    <div class="logo"><a href="./">Logo</a></div>
     <ul class="menu">
       <li><a href="#info">お知らせ</a></li>
-      <li><a href="#dialy">保育園日記</a></li>
+      <li><a href="#diary">保育園日記</a></li>
       <li><a href="#thought">わたしたちの想い</a></li>
       <li><a href="#attempt">園の取り組み</a></li>
       <li><a href="#life">園での生活</a></li>
@@ -36,83 +36,140 @@
         <div>子どもたちの成長を彩る、</div>
         <div>心温まる保育園の毎日</div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path d="
+        M 0, 160
+        L 0,80
+        Q 300, 160,  600, 80,  900, 0,  1200, 80,  1500, 160,  1800, 80,  2100, 0,  2100, 160
+        L 2100,160"></path></svg>
     </section>
 
     <section id="info">
-      <p class="section-title">お知らせ</p>
-      <ul>
-        <li>
-          <div class="tag">お便り</div>
-          <div class="date">2024.04.22</div>
-          <div class="text">4月の保育園だよりを更新しました。</div>
-        </li>
-        <li>
-          <div class="tag">お知らせ</div>
-          <div class="date">2024.04.22</div>
-          <div class="text">ホームページを開設いたしました！</div>
-        </li>
-      </ul>
+      <div class="wrap">
+        <div class="section-title-area">
+          <div class="section-title">お知らせ</div>
+          <a class="arrow" href="#">もっとみる</a>
+        </div>
+        <ul>
+          <li>
+            <div class="tag" type="newsletter">お便り</div>
+            <div class="date">2024.04.22</div>
+            <div class="text">4月の保育園だよりを更新しました。</div>
+          </li>
+          <li>
+            <div class="tag" type="info">お知らせ</div>
+            <div class="date">2024.04.22</div>
+            <div class="text">ホームページを開設いたしました！</div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="introduction">
-      <p class="section-title">園の紹介</p>
-
+      <div class="wrap">
+        <p class="section-title">園の紹介</p>
+      </div>
       <ul>
         <li>
-          <div class="img">
-            <img src="img/4329317_m.jpg"/>
-          </div>
-          <p>わたしたちの思い</p>
+          <img src="img/4329317_m.jpg"/>
+          <a class="arrow" href="#">わたしたちの思い</a>
         </li>
         <li>
-          <div class="img">
-            <img src="img/4329286_m.jpg"/>
-          </div>
-          <p>園の取り組み</p>
+          <img src="img/4329286_m.jpg"/>
+          <a class="arrow" href="#">園の取り組み</a>
         </li>
         <li>
-          <div class="img">
-            <img src="img/29274712_m.jpg"/>
-          </div>
-          <p>園での生活</p>
+          <img src="img/29274712_m.jpg"/>
+          <a class="arrow" href="#">園での生活</a>
         </li>
         <li>
-          <div class="img">
-            <img src="img/4409986_m.jpg"/>
-          </div>
-          <p>年間行事</p>
+          <img src="img/4409986_m.jpg"/>
+          <a class="arrow" href="#">年間行事</a>
         </li>
       </ul>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path d="
+        M 0, 0
+        L 0,80
+        Q 300, 0,  600, 80,  900, 160,  1200, 80,  1500, 0,  1800, 80,  2100, 160,  2100, 0
+        L 2100,0"></path></svg>
     </section>
 
-    <section id="dialy">
-      <p class="section-title">保育園日記</p>
+    <section id="diary">
+      <div class="wrap">
+        <div class="section-title-area">
+          <div class="section-title">保育園日記</div>
+          <a class="arrow" href="#">もっとみる</a>
+        </div>
 
-      <ul>
-        <li>
-          <div class="tag">そら組/活動記録</div>
-          <img src="img/4329317_m.jpg"/>
-          <p class="date">2024/05/16</p>
-          <div class="text">天気のいい日にお散歩</div>
-        </li>
-        <li>
-          <div class="tag">全体/活動記録</div>
-          <img src="img/3886712_m.jpg"/>
-          <p class="date">2024/05/18</p>
-          <div class="text">運動会のきろく</div>
-        </li>
-        <li>
-          <div class="tag">全体/活動記録</div>
-          <img src="img/27425125_m.jpg"/>
-          <p class="date">2024/05/23</p>
-          <div class="text">自然の中で！</div>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <div class="tag">そら組/活動記録</div>
+            <img src="img/4329317_m.jpg"/>
+            <p class="date">2024/05/16</p>
+            <div class="text">天気のいい日にお散歩</div>
+          </li>
+          <li>
+            <div class="tag">全体/活動記録</div>
+            <img src="img/3886712_m.jpg"/>
+            <p class="date">2024/05/18</p>
+            <div class="text">運動会のきろく</div>
+          </li>
+          <li>
+            <div class="tag">全体/活動記録</div>
+            <img src="img/27425125_m.jpg"/>
+            <p class="date">2024/05/23</p>
+            <div class="text">自然の中で！</div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer>
-    
+    <svg class="decoration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160"><path d="
+      M 0, 160
+      Q 600, 0,  1200, 160
+      L 1200,160"></path></svg>
+    <ul class="menu">
+      <li><a href="#info">お知らせ</a></li>
+      <li><a href="#diary">保育園日記</a></li>
+      <li><a href="#thought">わたしたちの想い</a></li>
+      <li><a href="#attempt">園の取り組み</a></li>
+      <li><a href="#life">園での生活</a></li>
+      <li><a href="#event">年間行事</a></li>
+    </ul>
+    <hr>
+    <div class="flex">
+      <div class="left">
+        <div class="logo">Logo</div>
+        <div class="adress">
+          <table>
+            <tr>
+              <th>住所</th><td>〒123-4567</td>
+            </tr>
+            <tr>
+              <th></th><td>東京都○○区1-2-34</td>
+            </tr>
+            <tr>
+              <th>電話</th><td>000-0000-0000</td>
+            </tr>
+          </table>
+        </div>
+        <div class="sns">
+          <a href="https://facebook.com/" name="facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 22.483 11.985 C 22.459 9.978 21.862 8.019 20.761 6.34 C 19.661 4.661 18.104 3.332 16.272 2.508 C 14.441 1.685 12.414 1.401 10.427 1.692 C 8.44 1.982 6.579 2.834 5.061 4.147 C 3.542 5.461 2.43 7.18 1.857 9.103 C 1.283 11.027 1.271 13.075 1.822 15.005 C 2.372 16.936 3.464 18.669 4.967 20 C 6.469 21.331 8.322 22.205 10.304 22.52 L 10.304 15.054 L 7.671 15.054 L 7.671 11.985 L 10.304 11.985 L 10.304 9.654 C 10.243 9.113 10.302 8.564 10.476 8.047 C 10.651 7.53 10.937 7.058 11.314 6.664 C 11.691 6.27 12.149 5.963 12.657 5.766 C 13.164 5.567 13.71 5.484 14.254 5.521 C 15.044 5.531 15.832 5.602 16.611 5.731 L 16.611 8.365 L 15.295 8.365 C 15.067 8.334 14.837 8.359 14.619 8.431 C 14.403 8.503 14.205 8.624 14.039 8.783 C 13.876 8.942 13.751 9.137 13.67 9.351 C 13.591 9.564 13.561 9.795 13.583 10.023 L 13.583 12.011 L 16.507 12.011 L 16.033 15.079 L 13.597 15.079 L 13.597 22.453 C 16.084 22.06 18.351 20.786 19.98 18.867 C 21.611 16.946 22.498 14.504 22.483 11.985 Z" style=""></path>
+          </svg></a>
+          <a href="https://instagram.com/" name="instagram"><svg viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+            <path d="M160,128a32,32,0,1,1-32-32A32.03667,32.03667,0,0,1,160,128Zm68-44v88a56.06353,56.06353,0,0,1-56,56H84a56.06353,56.06353,0,0,1-56-56V84A56.06353,56.06353,0,0,1,84,28h88A56.06353,56.06353,0,0,1,228,84Zm-52,44a48,48,0,1,0-48,48A48.05436,48.05436,0,0,0,176,128Zm16-52a12,12,0,1,0-12,12A12,12,0,0,0,192,76Z"/>
+          </svg></a>
+          <a href="https://twitter.com/" name="x"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 17.742 3.039 L 20.782 3.039 L 14.14 10.631 L 21.954 20.961 L 15.836 20.961 L 11.044 14.696 L 5.56 20.961 L 2.518 20.961 L 9.623 12.841 L 2.127 3.039 L 8.4 3.039 L 12.732 8.766 L 17.742 3.039 Z M 16.675 19.141 L 18.36 19.141 L 7.485 4.763 L 5.677 4.763 L 16.675 19.141 Z" style=""></path>
+          </svg></a>
+        </div>
+      </div>
+      <div class="right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492.765707253684!2d139.44083751254135!3d35.54424574012639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ff19c46845d1%3A0x3db2e5c582ef9374!2z5pel5pys5rK55YWa55S655Sw5pSv6YOo!5e0!3m2!1sja!2sjp!4v1716594776146!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
     <p class="copy">Copyright</p>
   </footer>
 </body>

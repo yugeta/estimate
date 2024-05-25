@@ -1,0 +1,19 @@
+footer .menu{
+  display:flex;
+  gap:20px;
+  align-items:start;
+  margin-left:auto;
+  justify-content:center;
+}
+footer .menu *{
+  font-size:0.9em;
+}
+
+
+@media (max-width:768px){
+  footer .menu{
+    flex-direction:column;
+    margin:0;
+    align-items:center;
+  }
+}
