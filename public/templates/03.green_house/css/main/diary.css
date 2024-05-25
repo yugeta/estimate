@@ -29,6 +29,7 @@
   left:0;
   font-size:0.8em;
   padding:5px;
+  z-index:2;
 }
 
 #diary ul li:nth-of-type(1) .tag{
@@ -58,6 +59,26 @@
 #diary .section-title-area .arrow{
   margin-left:50px;
   padding-right:4em;
+}
+
+#diary ul li .img{
+  overflow:hidden;
+  position:relative;
+  z-index:1;
+}
+
+#diary ul li .img img{
+  transition-property:transform;
+  transition-duration:0.3s;
+}
+
+@media (hover:hover){
+  #diary ul li .img img:hover{
+    transform:scale(1.2);
+  }
+}
+#diary ul li .img img:active{
+  transform:scale(1.2);
 }
 
 @media (max-width:768px){
