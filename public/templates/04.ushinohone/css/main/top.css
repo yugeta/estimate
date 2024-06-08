@@ -1,0 +1,76 @@
+#top{
+  position:sticky;
+  top:0;
+  z-index:1;
+  background-image:url(../../img/hero.jpg);
+  background-size:cover;
+  background-position:top;
+  background-color:rgba(0,0,0,0.5);
+  background-blend-mode:darken;
+}
+
+#top .frame{
+  height:100%;
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translate(-50%,0);
+}
+
+#top .logo{
+  position:absolute;
+  top:20px;
+  left:20px;
+}
+
+#top .logo a{
+  color:white;
+}
+
+#top .message{
+  color:white;
+  font-size:2.0em;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  letter-spacing:0.5em;
+  line-height:2.0em;
+}
+
+#top .contact{
+  position:absolute;
+  top:20px;
+  right:20px;
+  border:1px solid white;
+  padding:15px 20px 15px 20px;
+  color:white;
+  display:flex;
+  align-items:center;
+}
+#top .contact::after{
+  content:"";
+  display:inline-block;
+  width:1em;
+  height:1em;
+  background-color:white;
+  margin-left:10px;
+  clip-path:polygon(0 45%, 0 55%, 100% 55%, 50% 20%, 50% 45%);
+}
+#top .contact:hover{
+  color:yellow;
+  border-color:yellow;
+}
+#top .contact:hover::after{
+  background-color:yellow;
+}
+
+@media (max-width:768px){
+  #top .contact{
+    display:none;
+  }
+  #top .message{
+    letter-spacing:0.3em;
+    line-height:1.5em;
+  }
+}

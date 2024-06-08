@@ -1,0 +1,32 @@
+
+main{
+  --main-width:1000px;
+}
+
+main > section{
+  width:100%;
+  height : 100vh;
+  position:relative;
+  overflow:hidden;
+  z-index:2;
+}
+
+main img.bg{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  z-index:-2;
+}
+main .smoke{
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  z-index:-1;
+}
+
+main .frame{
+  width:var(--main-width);
+  max-width:100%;
+}

@@ -1,0 +1,138 @@
+#footer{
+  background-color:black;
+  padding:100px 0;
+  padding:20px;
+}
+
+#footer *{
+  color:white;
+}
+#footer p{
+  margin:0;
+  padding:0;
+}
+
+#footer .frame{
+  display:flex;
+  flex-direction:column;
+  gap:150px;
+  margin:0 auto;
+}
+
+#footer .frame .info{
+  display:flex;
+}
+#footer .frame .info > *{
+  width:50%;
+}
+
+#footer .company{
+  display:flex;
+  gap:20px;
+  padding:30px;
+}
+
+#footer .company .logo{
+  font-size:2.5em;
+}
+
+#footer .company ul,
+#footer .company li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#footer .company ul{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+#footer .company ul li{
+  display:flex;
+  gap:10px;
+}
+#footer .company ul li > *:nth-of-type(1){
+  width:80px;
+}
+#footer .company ul *{
+  font-size:0.9em;
+  letter-spacing:0.4em;
+  line-height:1.5em;
+}
+
+#footer .map{
+  padding:20px;
+}
+#footer .map iframe{
+  width:100%;
+  height:250px;
+}
+
+#footer .tel{
+  display:flex;
+  gap:10px;
+}
+
+#footer .tel svg{
+  fill:white;
+  width:50px;
+  height:50px;
+}
+
+#footer .tel .number{
+  font-size:1.8em;
+}
+
+#footer .contact{
+  display:inline-block;
+  border:1px solid white;
+  padding:15px 20px 15px 20px;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:250px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#footer .contact::after{
+  content:"";
+  display:inline-block;
+  width:1em;
+  height:1em;
+  background-color:white;
+  margin-left:10px;
+  clip-path:polygon(0 45%, 0 55%, 100% 55%, 50% 20%, 50% 45%);
+}
+#footer .contact:hover{
+  color:yellow;
+  border-color:yellow;
+}
+#footer .contact:hover::after{
+  background-color:yellow;
+}
+
+#footer .copy{
+  text-align:center;
+  position:absolute;
+  bottom:10px;
+  left:0;
+  width:100%;
+  font-size:0.8em;
+}
+
+@media(max-width:768px){
+  #footer .frame{
+    gap:20px;
+  }
+  #footer .frame .info{
+    flex-direction:column;
+    gap:20px;
+  }
+  #footer .frame .info > *{
+    width:100%;
+  }
+  #footer .tel .number{
+    font-size:1.4em;
+  }
+}

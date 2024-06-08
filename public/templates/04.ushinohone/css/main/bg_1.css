@@ -1,0 +1,23 @@
+#bg_1{
+  position:sticky;
+  top:100vh;
+  z-index:1;
+  background-image:url(../../img/bg_1.jpg);
+  background-size:cover;
+  background-position:top;
+  background-color:rgba(0,0,0,0.5);
+  background-blend-mode:darken;
+  transform:translate(0, -100%);
+}
+
+#bg_2{
+  position:sticky;
+  top:100vh;
+  z-index:1;
+  background-image:url(../../img/bg_2.jpg);
+  background-size:cover;
+  background-position:top;
+  background-color:rgba(0,0,0,0.5);
+  background-blend-mode:darken;
+  transform:translate(0, -100%);
+}
