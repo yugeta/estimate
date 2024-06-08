@@ -1,0 +1,96 @@
+#about{
+  /* margin-top:150vh; */
+  background-color:black;
+}
+
+#about *{
+  color:white;
+}
+
+#about .frame{
+  display:flex;
+  gap:50px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+#about .frame > *{
+  width:50%;
+}
+
+#about .frame .left{
+  padding:0 0 0 20px;
+}
+
+#about .logo{
+  display:flex;
+  flex-direction:column-reverse;
+}
+#about .logo .jp{
+  border-right:1px solid #9B9155;
+}
+#about .logo .en{
+  font-size:0.4em;
+  color:#9B9155;
+  line-height:2.0em;
+}
+
+#about .message{
+  font-size:0.9em;
+  white-space:pre-wrap;
+  margin:30px 0px;
+  line-height:2.0em;
+  letter-spacing:0.3em;
+}
+
+#about .img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+#about .link{
+  display:inline-flex;
+  align-items:center;
+  font-size:0.8em;
+  border-bottom:1px solid white;
+  padding:5px;
+  cursor:pointer;
+}
+#about .link::after{
+  content:"";
+  display:inline-block;
+  width:1em;
+  height:1em;
+  background-color:white;
+  margin-left:10px;
+  clip-path:polygon(0 45%, 0 55%, 100% 55%, 50% 20%, 50% 45%);
+}
+#about .link:hover{
+  color:yellow;
+  border-color:yellow;
+}
+#about .link:hover::after{
+  background-color:yellow;
+}
+
+@media(max-width:768px){
+  #about .frame{
+    flex-direction:column;
+  }
+  #about .frame .left,
+  #about .frame > *{
+    width:100%;
+    padding:20px;
+  }
+  #about .logo{
+    writing-mode: horizontal-tb;
+  }
+  #about .logo .jp{
+    border-right:0;
+    border-top:1px solid #9B9155;
+  }
+
+}
+

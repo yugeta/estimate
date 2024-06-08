@@ -1,0 +1,77 @@
+.humbarger-menu{
+  --col:white;
+  display:none;
+}
+.humbarger-menu label{
+  cursor:pointer;
+}
+
+.humbarger-menu{
+  position:absolute;
+  top:20px;
+  right:20px;
+  z-index:20;
+  width:25px;
+  height:25px;
+  text-align:center;
+  margin-left:auto;
+  margin-bottom:5px;
+}
+.humbarger-menu .humbarger{
+  width:100%;
+  height:100%;
+  display:inline-block;
+}
+.humbarger-menu .humbarger > span{
+  display:block;
+  width:100%;
+  height:1px;
+  background-color:var(--col);
+  transition-property:transform opacity;
+  transition-duration:0.3s;
+}
+.humbarger-menu .humbarger > span:nth-of-type(1){
+  position:absolute;
+  top:15%;
+  transform:translateY(-50%) rotate(0deg);
+}
+.humbarger-menu .humbarger > span:nth-of-type(2){
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  opacity:1.0;
+}
+.humbarger-menu .humbarger > span:nth-of-type(3){
+  position:absolute;
+  bottom:15%;
+  transform:translateY(50%) rotate(0deg);
+}
+#humbarger:checked ~ * .humbarger-menu .humbarger > span:nth-of-type(1){
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+}
+#humbarger:checked ~ * .humbarger-menu .humbarger > span:nth-of-type(2){
+  opacity:0.0;
+}
+#humbarger:checked ~ * .humbarger-menu .humbarger > span:nth-of-type(3){
+  bottom:50%;
+  transform:translateY(50%) rotate(-45deg);
+}
+#humbarger:checked ~ * .humbarger-menu{
+  position:fixed;
+}
+
+#humbarger:checked ~ * .humbarger-menu span{
+  background-color:white;
+}
+
+/* Scroll stop */
+body:has(#humbarger:checked){
+  overflow:hidden;
+}
+
+@media (max-width:768px){
+  .humbarger-menu{
+    display:block;
+  }
+}
