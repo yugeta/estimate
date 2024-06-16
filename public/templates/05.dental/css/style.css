@@ -13,6 +13,8 @@
 @import "main/detail.css";
 @import "main/access.css";
 
+@import "bg_anim.css";
+
 html,body{
   margin:0;
   padding:0;
