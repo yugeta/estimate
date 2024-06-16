@@ -1,0 +1,35 @@
+#teeth_bg{
+  position:fixed;
+  width:400px;
+  top:50%;
+  left:50%;
+  z-index:-10;
+  fill: #eff8fe;
+
+  animation-name: anim-teeth-bg;
+  animation-duration:60s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes anim-teeth-bg{
+  0%{
+    left : 100%;
+    top:50%;
+    transform : translate(0,-50%) rotate(0deg);
+  }
+  25%{
+    top:30%;
+  }
+  50%{
+    top:50%;
+  }
+  75%{
+    top:70%;
+  }
+  100%{
+    left : -400px;
+    top:50%;
+    transform : translate(0,-50%)  rotate(-360deg);
+  }
+}
