@@ -1,0 +1,19 @@
+
+main section{
+  position:relative;
+  min-height:100vh;
+  padding:1px;
+}
+
+main p.section-title{
+  margin:100px auto 50px;
+  display:block;
+  text-align:center;
+  font-size:1.2em;
+}
+
+@media(max-width:768px){
+  main p.section-title{
+    margin:30px auto;
+  }
+}

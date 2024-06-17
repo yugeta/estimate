@@ -1,0 +1,44 @@
+@import "common/header.css";
+@import "common/logo.css";
+@import "common/hamburger.css";
+@import "common/menu.css";
+@import "common/font.css";
+@import "common/footer.css";
+@import "common/link.css";
+
+@import "main/main.css";
+@import "main/top.css";
+@import "main/news.css";
+@import "main/about.css";
+@import "main/detail.css";
+@import "main/access.css";
+
+@import "bg_anim.css";
+
+html,body{
+  margin:0;
+  padding:0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing : border-box;
+     -moz-box-sizing : border-box;
+       -o-box-sizing : border-box;
+      -ms-box-sizing : border-box;
+          box-sizing : border-box;
+}
+
+*, *:before, *:after {
+  font-size:14px;
+  letter-spacing:0.2em;
+}
+
+:root{
+  --color-main   : #5AADE1;
+  --color-sub-bg : #F1F7FB;
+  --color-deep   : #0D498C;
+  
+  --size-header  : 80px;
+}
+
+
