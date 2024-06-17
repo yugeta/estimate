@@ -9,11 +9,11 @@
 @import "main/main.css";
 @import "main/top.css";
 @import "main/news.css";
-@import "main/about.css";
-@import "main/detail.css";
+@import "main/concept.css";
+@import "main/img.css";
+@import "main/menu.css";
 @import "main/access.css";
 
-@import "bg_anim.css";
 
 html,body{
   margin:0;
@@ -38,7 +38,7 @@ html,body{
   --color-sub-bg : #F1F7FB;
   --color-deep   : #0D498C;
   
-  --size-header  : 80px;
+  --size-header  : 100px;
 }
 
 

@@ -1,0 +1,29 @@
+#menu{
+  background-color:#F0E8D8;
+}
+
+#menu .wrap{
+  display:flex;
+  gap:50px;
+  width:800px;
+  max-width:100%;
+  margin:50px auto;
+  align-items:center;
+  position:relative;
+}
+
+#menu .wrap > *{
+  width:50%;
+}
+
+#menu .wrap .data .text{
+}
+
+#menu .wrap .link-button{
+  position:absolute;
+  width:200px;
+  bottom:0;
+  right:0;
+  margin:0;
+}
+

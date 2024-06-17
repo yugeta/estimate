@@ -1,61 +1,47 @@
 
-
+#access{
+  background-color:#E9E1D1;
+}
 
 #access .wrap{
   display:flex;
-  gap:0px;
+  gap:30px;
   align-items:start;
   width:800px;
   max-width:100%;
   margin:30px auto;
 }
-#access .wrap .info{
-  width:400px;
-  max-width:100%;
+
+#access .wrap .logo-area{
+  width:80px;
+}
+#access .wrap .logo-area img{
+  width:100%;
 }
 
-
+#access .wrap .info{
+  max-width:100%;
+}
 
 #access .logo{
   justify-content:center;
 }
 
-#access .address-time{
-  margin-top:30px;
-}
-#access .address-time *{
+#access table *{
   font-size:13px;
 }
-#access .address-time table{
+#access table{
   margin:0 auto;
   border-collapse:collapse;
 }
-#access .address-time th{
-  font-weight:normal;
+
+#access table th,
+#access table td{
+  padding:10px;
+  vertical-align:top;
   text-align:left;
 }
-#access .address-time tbody.spacer{
-  height:20px;
-}
-#access .address-time .week td{
-  color:var(--color-main);
-}
-#access .address-time .week th{
-  padding-right:20px;
-}
 
-#access .address-time .head tr,
-#access .address-time .week tr{
-  height:30px;
-}
-#access .address-time .head tr > *,
-#access .address-time .week tr > *{
-  border-bottom:1px solid var(--color-sub-bg);
-  padding : 10px 5px;
-}
-#access .address-time .address tr > *{
-  padding : 0px 5px;
-}
 
 #access .wrap .map{
   flex:1;
@@ -65,6 +51,28 @@
   height:300px;
   border-radius:30px 0 30px 0;
   overflow:hidden;
+}
+
+
+#access .contact{
+  border:1px solid black;
+  width:300px;
+  padding:20px;
+  text-align:center;
+  margin:100px auto 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#access .contact::after{
+  content: "";
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    background-color: black;
+    margin-left: 20px;
+    clip-path: polygon(0 55%, 0 65%, 100% 65%, 50% 20%, 50% 55%);
 }
 
 

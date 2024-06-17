@@ -10,9 +10,7 @@ ul.menu{
   align-items:center;
   height:100%;
 }
-ul.menu{
-  margin-left:auto;
-}
+
 
 
 ul.menu li{
@@ -29,22 +27,17 @@ ul.menu a{
   justify-content:center;
   width:100%;
   height:100%;
-  font-size:0.9em;
+  font-size:1.0em;
   min-width:60px;
   text-align:center;
   position:relative;
-  color:black;
-  font-size:0.8em;
-  letter-spacing:0;
-}
-ul.menu .link-web{
-  padding:0 10px;
-}
-ul.menu .link-web a{
   color:white;
+  letter-spacing:0;
+  border-bottom:1px solid transparent;
 }
+
 ul.menu a:hover{
-  background-color:#F3F3F3;
+  border-bottom:1px solid white;
 }
 
 ul.menu .tel{
