@@ -1,7 +1,15 @@
+header ul.menu,
+header li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
 header ul.menu{
   display:flex;
   gap:10px;
   height:70%;
+  margin-left:auto;
 }
 header ul.menu{
   /* position:absolute;
@@ -11,12 +19,7 @@ header ul.menu{
   z-index:10;
 }
 
-header ul.menu,
-header li{
-  list-style:none;
-  margin:0;
-  padding:0;
-}
+
 
 header li{
   display:flex;

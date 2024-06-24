@@ -1,0 +1,8 @@
+header{
+  width:100%;
+  height : var(--size-header);
+  display:flex;
+  position:absolute;
+  z-index:10;
+}
+

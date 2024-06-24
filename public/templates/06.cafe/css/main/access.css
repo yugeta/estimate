@@ -1,0 +1,90 @@
+
+#access{
+  background-color:#E9E1D1;
+}
+
+#access .wrap{
+  display:flex;
+  gap:30px;
+  align-items:start;
+  width:800px;
+  max-width:100%;
+  margin:30px auto;
+}
+
+#access .wrap .logo-area{
+  width:80px;
+}
+#access .wrap .logo-area img{
+  width:100%;
+}
+
+#access .wrap .info{
+  max-width:100%;
+}
+
+#access .logo{
+  justify-content:center;
+}
+
+#access table *{
+  font-size:13px;
+}
+#access table{
+  margin:0 auto;
+  border-collapse:collapse;
+}
+
+#access table th,
+#access table td{
+  padding:10px;
+  vertical-align:top;
+  text-align:left;
+}
+
+
+#access .wrap .map{
+  flex:1;
+}
+#access .map iframe{
+  width:100%;
+  height:300px;
+  border-radius:30px 0 30px 0;
+  overflow:hidden;
+}
+
+
+#access .contact{
+  border:1px solid black;
+  width:300px;
+  padding:20px;
+  text-align:center;
+  margin:100px auto 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#access .contact::after{
+  content: "";
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    background-color: black;
+    margin-left: 20px;
+    clip-path: polygon(0 55%, 0 65%, 100% 65%, 50% 20%, 50% 55%);
+}
+
+
+@media (max-width:768px){
+  #access .wrap{
+    flex-direction:column;
+    padding:0 20px;
+    align-items:center;
+    gap:20px;
+  }
+  #access .wrap .map{
+    width:100%;
+  }
+}
+

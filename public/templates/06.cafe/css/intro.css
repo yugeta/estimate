@@ -1,0 +1,112 @@
+body[data-status="intro"]{
+  overflow-y:hidden;
+}
+
+body[data-status="intro"] #intro_bg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-color:rgba(0,0,0, 1.0);
+  z-index:100;
+
+  /* overscroll-behavior-y: contain;
+  overflow-y: scroll; */
+
+  animation-name: anim-bg;
+  animation-duration:5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-in-out;
+}
+
+body[data-status="intro"] header .logo{
+  opacity:0;
+
+  animation-name: anim-logo;
+  animation-duration:5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-in-out;
+}
+
+body[data-status="intro"] #intro_bg .logo{
+  position:absolute;
+  z-index:200;
+  top:50%;
+  left:50%;
+  width:200px;
+  height:200px;
+  transform:translate(-50%,-50%);
+  object-fit:cover;
+  padding:0;
+
+  animation-name: anim-intro;
+  animation-duration:5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes anim-intro{
+  /* 拡大 */
+  0%{
+    width:0px;
+    height:0px;
+    top:50%;
+    left:50%;
+  }
+  /* 移動 */
+  20%{
+    width:200px;
+    height:200px;
+    top:50%;
+    left:50%;
+  }
+  40%{
+    width:150px;
+    height:150px;
+    top:50%;
+    left:50%;
+  }
+  45%{
+    width:150px;
+    height:150px;
+    top:50%;
+    left:50%;
+  }
+  /* F.O. */
+  80%{
+    width:80px;
+    height:80px;
+    top:50px;
+    left:90px;
+    opacity:1.0;
+  }
+  100%{
+    width:80px;
+    height:80px;
+    top:50px;
+    left:90px;
+    opacity:0.0;
+  }
+}
+@keyframes anim-bg{
+  80%{
+    opacity:1.0;
+  }
+  100%{
+    opacity:0.0;
+  }
+}
+
+@keyframes anim-logo{
+  80%{
+    opacity:0.0;
+  }
+  100%{
+    opacity:1.0;
+  }
+}
+
