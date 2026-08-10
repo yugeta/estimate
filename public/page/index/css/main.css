@@ -1,6 +1,7 @@
 @import "top.css";
 @import "features.css";
 @import "designs.css";
+@import "../../../asset/template_view/style.css";
 @import "blog.css";
 @import "community.css";
 @import "flow.css";

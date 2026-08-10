@@ -1,10 +1,19 @@
 import { Blog }    from "./blog.js"
 import { Files }   from "../../../asset/js/files.js"
 import { Blogger } from "../../../asset/blogger/blogger.js"
+import { TemplateView } from "../../../asset/template_view/main.js"
 
 class Main{
   constructor(){
+    this.templateView()
     this.files()
+  }
+
+  templateView(){
+    new TemplateView({
+      selector : "#designs .carousel .card a",
+      imageRoot : "template_images"
+    })
   }
 
   files(){
