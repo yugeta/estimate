@@ -50,13 +50,11 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Render preview images
-        if: steps.detect.outputs.files != ''
         run: |
           printf "%s\n" "${{ steps.detect.outputs.files }}" > /tmp/changed_template_files.txt
           node scripts/generate-template-previews.mjs /tmp/changed_template_files.txt
 
       - name: Commit generated images
-        if: steps.detect.outputs.files != ''
         run: |
           if [ -z "$(git status --porcelain -- public/template_images)" ]; then
             echo "No image updates detected."
