@@ -7,11 +7,11 @@ const HOST = "127.0.0.1"
 const PORT = 4173
 const repoRoot = process.cwd()
 const publicRoot = path.join(repoRoot, "public")
-const outputRoot = path.join(publicRoot, "template/images")
+const outputRoot = path.join(publicRoot, "template_images")
 const viewportPatterns = [
   { key: "pc", width: 1000, height: 1400 },
-  { key: "tablet", width: 768, height: 1200 },
-  { key: "smartphone", width: 320, height: 900 }
+  { key: "tb", width: 768, height: 1200 },
+  { key: "sp", width: 320, height: 900 }
 ]
 
 const mimeTypes = {
@@ -80,18 +80,55 @@ const startServer = () => {
   })
 }
 
+const templatesRoot = path.join(publicRoot, "templates")
+
 const loadChangedFiles = async (listFilePath) => {
   const content = await fs.readFile(listFilePath, "utf8")
   return content
     .split("\n")
     .map(line => line.trim())
     .filter(Boolean)
-    .filter(line => line.startsWith("public/templates/") && line.endsWith("/index.html"))
+    .filter(line => line.startsWith("public/templates/"))
 }
 
 const templateNameFromPath = (templatePath) => {
   const segments = templatePath.split("/")
-  return segments[2] || "template"
+  return segments[2] || ""
+}
+
+const getAllTemplateNames = async () => {
+  const entries = await fs.readdir(templatesRoot, { withFileTypes: true })
+  return entries.filter(entry => entry.isDirectory()).map(entry => entry.name)
+}
+
+const isTemplateRendered = async (templateName) => {
+  for (const pattern of viewportPatterns) {
+    const filePath = path.join(outputRoot, `${templateName}_${pattern.key}.jpg`)
+    try {
+      await fs.access(filePath)
+    } catch (error) {
+      return false
+    }
+  }
+  return true
+}
+
+const collectTargetTemplateNames = async (changedFiles) => {
+  const changedTemplateNames = changedFiles
+    .map(templateNameFromPath)
+    .filter(Boolean)
+
+  const allTemplateNames = await getAllTemplateNames()
+  const notRenderedTemplateNames = []
+
+  for (const templateName of allTemplateNames) {
+    const rendered = await isTemplateRendered(templateName)
+    if (!rendered) {
+      notRenderedTemplateNames.push(templateName)
+    }
+  }
+
+  return [...new Set([...changedTemplateNames, ...notRenderedTemplateNames])]
 }
 
 const main = async () => {
@@ -101,8 +138,10 @@ const main = async () => {
   }
 
   const changedFiles = await loadChangedFiles(listFilePath)
-  if (!changedFiles.length) {
-    console.log("No changed template HTML files found.")
+  const targetTemplateNames = await collectTargetTemplateNames(changedFiles)
+
+  if (!targetTemplateNames.length) {
+    console.log("No target templates found.")
     return
   }
 
@@ -111,21 +150,24 @@ const main = async () => {
   const browser = await chromium.launch({ headless: true })
 
   try {
-    for (const templatePath of changedFiles) {
-      const templateName = templateNameFromPath(templatePath)
+    for (const templateName of targetTemplateNames) {
+      const templatePath = `public/templates/${templateName}/index.html`
       const url = `http://${HOST}:${PORT}/templates/${templateName}/index.html`
-      const templateOutputDir = path.join(outputRoot, templateName)
-      await fs.mkdir(templateOutputDir, { recursive: true })
 
       for (const pattern of viewportPatterns) {
-        const outputPath = path.join(templateOutputDir, `${pattern.key}.png`)
+        const outputPath = path.join(outputRoot, `${templateName}_${pattern.key}.jpg`)
         const page = await browser.newPage({
           viewport: { width: pattern.width, height: pattern.height }
         })
 
         await page.goto(url, { waitUntil: "networkidle" })
         await page.waitForTimeout(500)
-        await page.screenshot({ fullPage: true, path: outputPath })
+        await page.screenshot({
+          fullPage: true,
+          path: outputPath,
+          quality: 82,
+          type: "jpeg"
+        })
         await page.close()
 
         console.log(
