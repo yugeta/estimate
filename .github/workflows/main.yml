@@ -18,5 +18,25 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            set -eu
+            echo "[debug] deploy start"
+            echo "[debug] host=$(hostname) user=$(whoami)"
             cd ${{ secrets.SERVER_DEPLOY_DIR }}
-            git pull origin main
+            echo "[debug] pwd=$(pwd)"
+            echo "[debug] git version=$(git --version)"
+            echo "[debug] branch before pull"
+            git rev-parse --abbrev-ref HEAD
+            echo "[debug] remote list"
+            git remote -v
+            echo "[debug] status before pull"
+            git status --short --branch
+            echo "[debug] fetch origin main"
+            git fetch origin main
+            echo "[debug] commit compare local vs origin/main"
+            echo "local:  $(git rev-parse --short HEAD)"
+            echo "remote: $(git rev-parse --short origin/main)"
+            echo "[debug] pull --ff-only"
+            git pull --ff-only origin main
+            echo "[debug] status after pull"
+            git status --short --branch
+            echo "[debug] deploy done"
