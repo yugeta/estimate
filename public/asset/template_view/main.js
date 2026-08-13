@@ -238,7 +238,27 @@ class TemplateView {
     this.imageElm.setAttribute("src", imagePath)
   }
 
+  clearModalContent() {
+    if (this.tabsElm) {
+      this.tabsElm.innerHTML = ""
+    }
+
+    if (this.openLinkElm) {
+      this.openLinkElm.removeAttribute("href")
+    }
+
+    if (this.imageElm) {
+      this.imageElm.removeAttribute("src")
+    }
+
+    if (this.bodyElm) {
+      this.bodyElm.scrollTop = 0
+    }
+  }
+
   open(card) {
+    this.clearModalContent()
+
     this.currentTemplateName = card.getAttribute("data-template-name") || ""
     this.currentSourceHref = card.getAttribute("data-src-href") || card.getAttribute("href") || ""
 
@@ -269,6 +289,7 @@ class TemplateView {
 
   close() {
     this.hideTooltip()
+    this.clearModalContent()
     this.root.setAttribute("data-status", "closed")
     this.root.removeAttribute("data-device")
     document.body.removeAttribute("data-template-view")
