@@ -47,6 +47,7 @@ class TemplateView {
     this.tabsElm = this.root.querySelector(".template-view-tabs")
     this.imageElm = this.root.querySelector(".template-view-image")
     this.openLinkElm = this.root.querySelector(".template-view-open-link")
+    this.bodyElm = this.root.querySelector(".template-view-body")
 
     this.tooltipElm = document.createElement("div")
     this.tooltipElm.className = "template-view-tooltip"
@@ -252,8 +253,18 @@ class TemplateView {
     this.renderTabs()
     this.updatePreview()
 
+    if (this.bodyElm) {
+      this.bodyElm.scrollTop = 0
+    }
+
     this.root.setAttribute("data-status", "open")
     document.body.setAttribute("data-template-view", "open")
+
+    if (this.bodyElm) {
+      requestAnimationFrame(() => {
+        this.bodyElm.scrollTop = 0
+      })
+    }
   }
 
   close() {

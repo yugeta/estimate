@@ -1,0 +1,1 @@
+main{border-bottom:1px solid transparent;border-top:1px solid transparent;min-height:calc(100vh - var(--size-header) - var(--size-footer) - 2px);position:relative;width:100%;z-index:1}main section{margin-bottom:100px;min-height:50vh;width:100%}

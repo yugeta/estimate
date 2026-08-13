@@ -1,0 +1,1 @@
+body{background-color:#000}:root{--size-img:100px;--size-gap:10px}.image-carousel{display:flex;gap:var(--size-gap);overflow:scroll hidden;width:500px}.image-carousel>*{flex:1;min-width:var(--size-img)}.image-carousel img{border-radius:calc(var(--size-img)/10);display:block;height:var(--size-img);-o-object-fit:cover;object-fit:cover;width:var(--size-img)}
