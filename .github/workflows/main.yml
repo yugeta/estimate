@@ -17,6 +17,9 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          timeout: 30s
+          command_timeout: 5m
+          debug: true
           script: |
             set -eu
             echo "[debug] deploy start"
