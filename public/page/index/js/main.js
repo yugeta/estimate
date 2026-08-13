@@ -27,6 +27,7 @@ class Main{
   }
 
   blog(){
+    if(!document.getElementById("blog")){return}
     new Blogger({
       api  : "asset/blogger/main.php",
       feed : "https://mynt-estimate.blogspot.com/feeds/posts/default?alt=json&fetchImages=true&max-results=12", // https://mynt-estimate.blogspot.com/
